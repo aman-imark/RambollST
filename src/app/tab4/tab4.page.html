@@ -1,0 +1,31 @@
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <div *ngIf="afterSelect === false" style="position: relative;top: 50%;transform: translateY(-50%);">
+    <div style="height:40vh;width: 80%;margin: 0% auto;text-align:center;">
+      <img src="../assets/env.svg" style="height:100%;">
+    </div>
+    <div class="ion-padding"> <br>
+      <h4 style="color:#010101;font-weight: 800;text-align: center;">HOW'S THE TEMPERATURE FOR YOU?</h4>
+    </div>
+    <div class="ion-padding">
+      <div><ion-button  mode="ios" expand="block"  class="btn-custom hex-button" color="danger" (click)="hotClick()">HOT</ion-button></div><br>
+      <div><ion-button  mode="ios" expand="block"  class="btn-custom hex-button" color="danger" (click)="coldClick()">COLD</ion-button></div> <br>
+      <div><ion-button  mode="ios" expand="block"  class="btn-custom hex-button" color="danger" (click)="fineClick()">I'M FINE</ion-button></div><br>
+    </div>
+  </div>
+
+  <div *ngIf="afterSelect === true"  style="position: relative;top: 50%;transform: translateY(-50%);">
+    <div style="height:40vh;width: 80%;margin: 0% auto;text-align:center;">
+      <img src="../assets/env2.svg" style="height:100%;">
+    </div>
+
+    <div class="ion-padding"> <br>
+      <h4 style="color:#010101;font-weight: 800;text-align: center;">THANK YOU FOR YOUR FEEDBACK!</h4>
+      <p style="color:#949494;font-weight: 800;text-align: center;">Thank you for sharing your thoughts with us. Your feedback will be put to great use!</p>
+    </div>
+    <div class="ion-padding"  style="text-align: center;">
+      <div><ion-button  mode="ios" expand="block" class="btn-custom hex-button" color="danger" (click)="goto_SustainablePage()">WAYS TO BE MORE SUSTAINABLE</ion-button></div>     
+    </div>    
+  </div>
+
+</ion-content>

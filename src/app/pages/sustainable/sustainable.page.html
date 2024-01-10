@@ -1,0 +1,35 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+    <!-- <ion-title class="ion-text-start">Sustainable</ion-title> -->
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="false">
+
+
+  <div style="max-width:600px;margin:auto;">
+    <div class="ion-padding-horizontal">
+      <h5 style="color:#EE7981;font-weight: 800;">WAYS TO REDUCE YOUR CARBON FOOTPRINT</h5>
+      <p style="color: #949494;font-weight:600;">The choices you make in your day-to-day life can lessen your personal impact on the environment!</p>
+    </div>
+
+  <ion-grid>
+    <ion-row >
+    <ion-col size="6" *ngFor="let st of sustainData" (click)="goto_subSustainable(st.id, st.data)">
+        <div class="hex-div">
+           <div> <ion-icon [src]="st.icon"></ion-icon> </div>
+           <div style="text-align:center;font-weight:800;font-size:12px;">{{st.title}}</div>
+        </div> <br>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  </div>
+
+</ion-content>
+
+<app-custom-tabs></app-custom-tabs>

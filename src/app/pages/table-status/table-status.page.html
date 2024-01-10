@@ -1,0 +1,54 @@
+<ion-header  class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+
+    <div  style="max-width:600px;margin:auto;">
+      <div class="ion-padding"  style="text-align: center;">
+        <div>
+          <ion-button  mode="ios" expand="block" class="btn-custom hex-button" color="danger">YOU ARE BOOKED!</ion-button>
+        </div> 
+      </div>    
+  
+  
+       <ion-card mode="ios">
+        <ion-card-content mode="ios">
+           <div style="text-align: center;"><img src="assets/bookingCnf.png" style="width: 50vw;"></div>
+  
+           <div class="ion-padding ion-text-center">
+            <h3 style="color:#010101;font-weight: 800;text-align: center;font-size:16pt;">CONFIRMATION SLIP</h3> 
+            <br>
+            
+            <div>
+              <p style="color:#949494;font-weight: 800;text-align: center;display:inline;border-bottom: 1px solid #949494;">ASSIGNED TABLE</p>
+            </div>
+            <br>
+  
+
+            <div style="display:flex;align-items:center;justify-content: center;color: #EE7981;font-weight:800;">
+              <ion-text>TABLE 01</ion-text>
+              <ion-text style="display:inline-flex;align-items:center;margin-left:30px;position: relative;"><span class="dot"></span>&nbsp;&nbsp;L1 FLOOR</ion-text>
+            </div>
+            <div><ion-text style="color: #EE7981;font-weight:800;">TTSH KOPITIAM</ion-text></div>
+
+            <p class="ion-padding" style="font-weight: 800;color:#949494;">DO TAKE NOTE TO BE AT YOUR APPOINTMENT ON TIME</p>
+          </div>
+        </ion-card-content>
+  
+       </ion-card>
+  
+     
+    </div>
+  
+
+</ion-content>
+
+
+<app-custom-tabs></app-custom-tabs>

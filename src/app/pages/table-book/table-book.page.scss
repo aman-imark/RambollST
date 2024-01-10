@@ -1,0 +1,82 @@
+ion-select {
+  ion-label {
+    font-weight: 800;
+  }
+}
+
+
+.activTable {
+  // fill: #e3212d !important;
+  fill: #3171e0 !important;
+}
+
+.cls-red {
+  fill: #e3212d !important;
+}
+
+.dot {
+  height: 6px;
+  width: 6px;
+  background-color: #949494;
+  border-radius: 50%;
+  display: inline-flex;
+  position: relative;
+  top: 1.5px;
+}
+
+// .maxHeight {
+//   text-align: center;
+//   height: calc(100vh - 114px);
+//   width: 100vw;
+//   // border: 1px solid red;
+
+//   svg {
+//     height: 100%;
+//     width: 100%;
+//     object-fit: contain;
+//   }
+
+//   // max-height:600px;
+// }
+
+// @media only screen and (max-width:991px) and (min-width:768px) {
+//   .maxHeight {
+//     height: calc(100vh - 149px);
+//   }
+// }
+
+
+
+
+
+.maxHeight {
+  text-align: center;
+  height: calc(100vh - 114px);
+  width: 100vw;
+  overflow: hidden;
+  // border: 1px solid red;
+}
+
+@media only screen and (max-width:991px) and (min-width:768px) {
+  .maxHeight {
+    height: calc(100vh - 155px);
+  }
+}
+
+@media only screen and (max-width:767px) {
+  .maxHeight svg {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  #svg4{
+    height: 100%;
+    width: 138%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+ 
+}

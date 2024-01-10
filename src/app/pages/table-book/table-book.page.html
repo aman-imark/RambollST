@@ -1,0 +1,1850 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar style="--background:#B9B5B5;">
+    <ion-select class="ion-padding" mode="md" side="bottom" alignment="start" [(ngModel)]="selectedLocation"
+      (ionChange)="locationSelection($event)" interface="popover"
+      style="color:#FFFFFF;font-weight:800;width: 95vw;">
+      <ion-select-option *ngFor="let loc of locationData; let i = index" [value]="loc.id">{{loc.name}}</ion-select-option>
+    </ion-select>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content [fullscreen]="true">
+	<ion-refresher mode="md" slot="fixed" (ionRefresh)="doRefresh($event)">
+	  <ion-refresher-content></ion-refresher-content>
+	</ion-refresher>
+
+<div class="maxHeight" style="text-align: center;">
+
+
+<svg id="svg1" *ngIf="selectedLocation == '1'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110.79 170.55">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-9, .cls-14, .cls-12 {
+        stroke-width: .1px;
+      }
+
+      .cls-1, .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-7 {
+        stroke: #231f20;
+      }
+
+      .cls-2 {
+        stroke-dasharray: 0 0 1.02 1.02;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-6, .cls-8, .cls-9, .cls-10, .cls-14, .cls-15, .cls-11, .cls-12, .cls-13 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-6, .cls-9, .cls-10, .cls-14, .cls-15, .cls-11, .cls-12, .cls-13 {
+        stroke: gray;
+      }
+
+      .cls-3 {
+        stroke-dasharray: 0 1;
+      }
+
+      .cls-5, .cls-8 {
+        stroke: #000;
+      }
+
+      .cls-16 {
+        fill: #d89326;
+        opacity: .15;
+      }
+
+      .cls-6 {
+        stroke-dasharray: 0 0 1.04 1.04;
+      }
+
+      .cls-7 {
+        fill: #0b8a49;
+      }
+
+      .cls-17, .cls-18, .cls-19 {
+        fill: gray;
+      }
+
+      .cls-18 {
+        font-size: 6px;
+      }
+
+      .cls-18, .cls-19 {
+        font-family: ArialMT, Arial;
+      }
+
+      .cls-8 {
+        stroke-width: .05px;
+      }
+
+      .cls-20 {
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 3px;
+      }
+
+      .cls-19 {
+        font-size: 8px;
+      }
+
+      .cls-9 {
+        stroke-dasharray: 0 0 1.04 1.04;
+      }
+
+      .cls-14, .cls-15 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-15, .cls-11 {
+        stroke-width: .25px;
+      }
+
+      .cls-21 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-12 {
+        stroke-dasharray: 0 0 1.02 1.02;
+      }
+
+      .cls-13 {
+        stroke-width: .5px;
+      }
+    </style>
+  </defs>
+  <g id="Hatch">
+    <polygon class="cls-16" points="-169.84 11.07 -169.84 72.71 -255.56 72.71 -255.56 122.43 -255.56 157.83 -255.56 190.04 -75.39 190.04 -75.39 159.58 43.4 159.58 43.4 157.83 43.4 141.12 43.4 125.9 106.67 125.9 106.67 11.07 -169.84 11.07"/>
+  </g>
+  <g id="Furniture_Layout" data-name="Furniture Layout">
+    <g>
+      <rect class="cls-5" x="-3.95" y="150.24" width="8.1" height="5"/>
+      <g>
+        <rect class="cls-5" x=".87" y="147.11" width="2.53" height="2.53"/>
+        <line class="cls-8" x1="3.4" y1="147.37" x2=".87" y2="147.37"/>
+      </g>
+    </g>
+    <g>
+      <rect class="cls-5" x="6.41" y="150.24" width="8.1" height="5"/>
+      <g>
+        <g>
+          <rect class="cls-5" x="7.16" y="147.11" width="2.53" height="2.53"/>
+          <line class="cls-8" x1="9.69" y1="147.37" x2="7.16" y2="147.37"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="11.23" y="147.11" width="2.53" height="2.53"/>
+          <line class="cls-8" x1="13.76" y1="147.37" x2="11.23" y2="147.37"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <rect class="cls-5" x="16.77" y="150.24" width="8.1" height="5"/>
+      <g>
+        <g>
+          <rect class="cls-5" x="17.52" y="147.11" width="2.53" height="2.53"/>
+          <line class="cls-8" x1="20.05" y1="147.37" x2="17.52" y2="147.37"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="21.59" y="147.11" width="2.53" height="2.53"/>
+          <line class="cls-8" x1="24.11" y1="147.37" x2="21.59" y2="147.37"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <rect class="cls-5" x="27.12" y="150.24" width="8.1" height="5"/>
+      <g>
+        <rect class="cls-5" x="27.88" y="147.11" width="2.53" height="2.53"/>
+        <line class="cls-8" x1="30.4" y1="147.37" x2="27.88" y2="147.37"/>
+      </g>
+      <g>
+        <rect class="cls-5" x="31.95" y="147.11" width="2.53" height="2.53"/>
+        <line class="cls-8" x1="34.47" y1="147.37" x2="31.95" y2="147.37"/>
+      </g>
+    </g>
+    <g>
+      <rect class="cls-5" x="-66.1" y="155.76" width="101.33" height="2.53" transform="translate(-30.88 314.04) rotate(180)"/>
+      <line class="cls-8" x1="-66.1" y1="158.02" x2="35.23" y2="158.02"/>
+    </g>
+
+
+
+  <!-- 6, 7, 8, 9 and 10 Start here -->
+    <g *ngIf="table_10 == '0'" id="10" (click)="clickOnTable('10')">
+      <rect [ngClass]="{'activTable': selectedTBnum == '10' }" class="cls-7" x="47.01" y="117.41" width="8.1" height="5"/>
+      <g>
+        <g>
+          <rect [ngClass]="{'activTable': selectedTBnum == '10' }" class="cls-7" x="47.76" y="114.28" width="2.53" height="2.53"/>
+          <line [ngClass]="{'activTable': selectedTBnum == '10' }" class="cls-7" x1="50.29" y1="114.54" x2="47.76" y2="114.54"/>
+        </g>
+        <g>
+          <rect [ngClass]="{'activTable': selectedTBnum == '10' }" class="cls-7" x="51.83" y="114.28" width="2.53" height="2.53"/>
+          <line [ngClass]="{'activTable': selectedTBnum == '10' }" class="cls-7" x1="54.35" y1="114.54" x2="51.83" y2="114.54"/>
+        </g>
+      </g>
+    </g>
+    <g *ngIf="table_9 == '0'" id="9" (click)="clickOnTable('9')">
+      <rect [ngClass]="{'activTable': selectedTBnum == '9' }" class="cls-7" x="58.66" y="117.41" width="8.1" height="5"/>
+      <g>
+        <g>
+          <rect [ngClass]="{'activTable': selectedTBnum == '9' }" class="cls-7" x="59.41" y="114.28" width="2.53" height="2.53"/>
+          <line [ngClass]="{'activTable': selectedTBnum == '9' }" class="cls-7" x1="61.94" y1="114.54" x2="59.41" y2="114.54"/>
+        </g>
+        <g>
+          <rect [ngClass]="{'activTable': selectedTBnum == '9' }" class="cls-7" x="63.48" y="114.28" width="2.53" height="2.53"/>
+          <line [ngClass]="{'activTable': selectedTBnum == '9' }" class="cls-7" x1="66.01" y1="114.54" x2="63.48" y2="114.54"/>
+        </g>
+      </g>
+    </g>
+    <g *ngIf="table_8 == '0'" id="8" (click)="clickOnTable('8')">
+      <rect [ngClass]="{'activTable': selectedTBnum == '8' }" class="cls-7" x="70.31" y="117.41" width="8.1" height="5"/>
+      <g>
+        <g>
+          <rect [ngClass]="{'activTable': selectedTBnum == '8' }" class="cls-7" x="71.06" y="114.28" width="2.53" height="2.53"/>
+          <line [ngClass]="{'activTable': selectedTBnum == '8' }" class="cls-7" x1="73.59" y1="114.54" x2="71.06" y2="114.54"/>
+        </g>
+        <g>
+          <rect [ngClass]="{'activTable': selectedTBnum == '8' }" class="cls-7" x="75.13" y="114.28" width="2.53" height="2.53"/>
+          <line [ngClass]="{'activTable': selectedTBnum == '8' }" class="cls-7" x1="77.66" y1="114.54" x2="75.13" y2="114.54"/>
+        </g>
+      </g>
+    </g>
+    <g *ngIf="table_7 == '0'" id="7" (click)="clickOnTable('7')">
+      <rect [ngClass]="{'activTable': selectedTBnum == '7' }" class="cls-7" x="81.97" y="117.41" width="8.1" height="5"/>
+      <g>
+        <g>
+          <rect [ngClass]="{'activTable': selectedTBnum == '7' }" class="cls-7" x="82.72" y="114.28" width="2.53" height="2.53"/>
+          <line [ngClass]="{'activTable': selectedTBnum == '7' }" class="cls-7" x1="85.24" y1="114.54" x2="82.72" y2="114.54"/>
+        </g>
+        <g>
+          <rect [ngClass]="{'activTable': selectedTBnum == '7' }" class="cls-7" x="86.79" y="114.28" width="2.53" height="2.53"/>
+          <line [ngClass]="{'activTable': selectedTBnum == '7' }" class="cls-7" x1="89.31" y1="114.54" x2="86.79" y2="114.54"/>
+        </g>
+      </g>
+    </g>
+    <g *ngIf="table_6 == '0'" id="6" (click)="clickOnTable('6')">
+      <rect [ngClass]="{'activTable': selectedTBnum == '6' }" class="cls-7" x="93.62" y="117.41" width="8.1" height="5"/>
+      <g>
+        <rect [ngClass]="{'activTable': selectedTBnum == '6' }" class="cls-7" x="94.37" y="114.28" width="2.53" height="2.53"/>
+        <line [ngClass]="{'activTable': selectedTBnum == '6' }" class="cls-7" x1="96.9" y1="114.54" x2="94.37" y2="114.54"/>
+      </g>
+      <g>
+        <rect [ngClass]="{'activTable': selectedTBnum == '6' }" class="cls-7" x="98.44" y="114.28" width="2.53" height="2.53"/>
+        <line [ngClass]="{'activTable': selectedTBnum == '6' }" class="cls-7" x1="100.97" y1="114.54" x2="98.44" y2="114.54"/>
+      </g>
+    </g>
+  <!-- ////// -->
+    <g *ngIf="table_10 == '1'">
+      <rect class="cls-red cls-7" x="47.01" y="117.41" width="8.1" height="5"/>
+      <g>
+        <g>
+          <rect class="cls-red cls-7" x="47.76" y="114.28" width="2.53" height="2.53"/>
+          <line class="cls-red cls-7" x1="50.29" y1="114.54" x2="47.76" y2="114.54"/>
+        </g>
+        <g>
+          <rect class="cls-red cls-7" x="51.83" y="114.28" width="2.53" height="2.53"/>
+          <line class="cls-red cls-7" x1="54.35" y1="114.54" x2="51.83" y2="114.54"/>
+        </g>
+      </g>
+    </g>
+    <g *ngIf="table_9 == '1'">
+      <rect class="cls-red cls-7" x="58.66" y="117.41" width="8.1" height="5"/>
+      <g>
+        <g>
+          <rect class="cls-red cls-7" x="59.41" y="114.28" width="2.53" height="2.53"/>
+          <line class="cls-red cls-7" x1="61.94" y1="114.54" x2="59.41" y2="114.54"/>
+        </g>
+        <g>
+          <rect class="cls-red cls-7" x="63.48" y="114.28" width="2.53" height="2.53"/>
+          <line class="cls-red cls-7" x1="66.01" y1="114.54" x2="63.48" y2="114.54"/>
+        </g>
+      </g>
+    </g>
+    <g *ngIf="table_8 == '1'">
+      <rect class="cls-red cls-7" x="70.31" y="117.41" width="8.1" height="5"/>
+      <g>
+        <g>
+          <rect class="cls-red cls-7" x="71.06" y="114.28" width="2.53" height="2.53"/>
+          <line class="cls-red cls-7" x1="73.59" y1="114.54" x2="71.06" y2="114.54"/>
+        </g>
+        <g>
+          <rect class="cls-red cls-7" x="75.13" y="114.28" width="2.53" height="2.53"/>
+          <line class="cls-red cls-7" x1="77.66" y1="114.54" x2="75.13" y2="114.54"/>
+        </g>
+      </g>
+    </g>
+    <g *ngIf="table_7 == '1'">
+      <rect class="cls-red cls-7" x="81.97" y="117.41" width="8.1" height="5"/>
+      <g>
+        <g>
+          <rect class="cls-red cls-7" x="82.72" y="114.28" width="2.53" height="2.53"/>
+          <line class="cls-red cls-7" x1="85.24" y1="114.54" x2="82.72" y2="114.54"/>
+        </g>
+        <g>
+          <rect class="cls-red cls-7" x="86.79" y="114.28" width="2.53" height="2.53"/>
+          <line class="cls-red cls-7" x1="89.31" y1="114.54" x2="86.79" y2="114.54"/>
+        </g>
+      </g>
+    </g>
+    <g *ngIf="table_6 == '1'">
+      <rect class="cls-red cls-7" x="93.62" y="117.41" width="8.1" height="5"/>
+      <g>
+        <rect class="cls-red cls-7" x="94.37" y="114.28" width="2.53" height="2.53"/>
+        <line class="cls-red cls-7" x1="96.9" y1="114.54" x2="94.37" y2="114.54"/>
+      </g>
+      <g>
+        <rect class="cls-red cls-7" x="98.44" y="114.28" width="2.53" height="2.53"/>
+        <line class="cls-red cls-7" x1="100.97" y1="114.54" x2="98.44" y2="114.54"/>
+      </g>
+    </g>
+
+
+
+  <!-- 6, 7, 8, 9 and 10 end here -->
+
+
+    <g>
+      <rect class="cls-5" x="44.37" y="122.93" width="57.35" height="2.53" transform="translate(146.09 248.38) rotate(180)"/>
+      <line class="cls-8" x1="44.37" y1="125.19" x2="101.72" y2="125.19"/>
+    </g>
+    <g>
+      <rect class="cls-5" x="34.41" y="108.82" width="8.1" height="5" transform="translate(76.93 222.64) rotate(180)"/>
+      <g>
+        <g>
+          <rect class="cls-5" x="39.24" y="114.42" width="2.53" height="2.53" transform="translate(81 231.37) rotate(180)"/>
+          <line class="cls-8" x1="39.24" y1="116.69" x2="41.76" y2="116.69"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="35.17" y="114.42" width="2.53" height="2.53" transform="translate(72.86 231.37) rotate(180)"/>
+          <line class="cls-8" x1="35.17" y1="116.69" x2="37.69" y2="116.69"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect class="cls-5" x="35.17" y="105.69" width="2.53" height="2.53"/>
+          <line class="cls-8" x1="37.69" y1="105.95" x2="35.17" y2="105.95"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="39.24" y="105.69" width="2.53" height="2.53"/>
+          <line class="cls-8" x1="41.76" y1="105.95" x2="39.24" y2="105.95"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <rect class="cls-5" x="32.38" y="56.37" width="8.1" height="5" transform="translate(-22.44 95.3) rotate(-90)"/>
+      <g>
+        <g>
+          <rect class="cls-5" x="30.8" y="59.64" width="2.53" height="2.53" transform="translate(-28.84 92.96) rotate(-90)"/>
+          <line class="cls-8" x1="31.06" y1="59.64" x2="31.06" y2="62.17"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="30.8" y="55.57" width="2.53" height="2.53" transform="translate(-24.77 88.89) rotate(-90)"/>
+          <line class="cls-8" x1="31.06" y1="55.57" x2="31.06" y2="58.1"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect class="cls-5" x="39.54" y="55.57" width="2.53" height="2.53" transform="translate(97.63 16.03) rotate(90)"/>
+          <line class="cls-8" x1="41.8" y1="58.1" x2="41.8" y2="55.57"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="39.54" y="59.64" width="2.53" height="2.53" transform="translate(101.7 20.1) rotate(90)"/>
+          <line class="cls-8" x1="41.8" y1="62.17" x2="41.8" y2="59.64"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <rect class="cls-5" x="17.89" y="56.37" width="8.1" height="5" transform="translate(-36.93 80.81) rotate(-90)"/>
+      <g>
+        <g>
+          <rect class="cls-5" x="16.31" y="59.64" width="2.53" height="2.53" transform="translate(-43.33 78.47) rotate(-90)"/>
+          <line class="cls-8" x1="16.57" y1="59.64" x2="16.57" y2="62.17"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="16.31" y="55.57" width="2.53" height="2.53" transform="translate(-39.26 74.4) rotate(-90)"/>
+          <line class="cls-8" x1="16.57" y1="55.57" x2="16.57" y2="58.1"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect class="cls-5" x="25.04" y="55.57" width="2.53" height="2.53" transform="translate(83.14 30.53) rotate(90)"/>
+          <line class="cls-8" x1="27.31" y1="58.1" x2="27.31" y2="55.57"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="25.04" y="59.64" width="2.53" height="2.53" transform="translate(87.21 34.59) rotate(90)"/>
+          <line class="cls-8" x1="27.31" y1="62.17" x2="27.31" y2="59.64"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <rect class="cls-5" x="3.4" y="56.37" width="8.1" height="5" transform="translate(-51.42 66.32) rotate(-90)"/>
+      <g>
+        <g>
+          <rect class="cls-5" x="1.82" y="59.64" width="2.53" height="2.53" transform="translate(-57.82 63.98) rotate(-90)"/>
+          <line class="cls-8" x1="2.08" y1="59.64" x2="2.08" y2="62.17"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="1.82" y="55.57" width="2.53" height="2.53" transform="translate(-53.75 59.91) rotate(-90)"/>
+          <line class="cls-8" x1="2.08" y1="55.57" x2="2.08" y2="58.1"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect class="cls-5" x="10.55" y="55.57" width="2.53" height="2.53" transform="translate(68.65 45.02) rotate(90)"/>
+          <line class="cls-8" x1="12.82" y1="58.1" x2="12.82" y2="55.57"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="10.55" y="59.64" width="2.53" height="2.53" transform="translate(72.72 49.09) rotate(90)"/>
+          <line class="cls-8" x1="12.82" y1="62.17" x2="12.82" y2="59.64"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <rect class="cls-5" x="32.38" y="68.23" width="8.1" height="5" transform="translate(-34.3 107.16) rotate(-90)"/>
+      <g>
+        <g>
+          <rect class="cls-5" x="30.8" y="71.5" width="2.53" height="2.53" transform="translate(-40.7 104.83) rotate(-90)"/>
+          <line class="cls-8" x1="31.06" y1="71.5" x2="31.06" y2="74.03"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="30.8" y="67.43" width="2.53" height="2.53" transform="translate(-36.64 100.76) rotate(-90)"/>
+          <line class="cls-8" x1="31.06" y1="67.43" x2="31.06" y2="69.96"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect class="cls-5" x="39.54" y="67.43" width="2.53" height="2.53" transform="translate(109.49 27.9) rotate(90)"/>
+          <line class="cls-8" x1="41.8" y1="69.96" x2="41.8" y2="67.43"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="39.54" y="71.5" width="2.53" height="2.53" transform="translate(113.56 31.97) rotate(90)"/>
+          <line class="cls-8" x1="41.8" y1="74.03" x2="41.8" y2="71.5"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <rect class="cls-5" x="17.89" y="68.23" width="8.1" height="5" transform="translate(-48.79 92.67) rotate(-90)"/>
+      <g>
+        <g>
+          <rect class="cls-5" x="16.31" y="71.5" width="2.53" height="2.53" transform="translate(-55.2 90.34) rotate(-90)"/>
+          <line class="cls-8" x1="16.57" y1="71.5" x2="16.57" y2="74.03"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="16.31" y="67.43" width="2.53" height="2.53" transform="translate(-51.13 86.27) rotate(-90)"/>
+          <line class="cls-8" x1="16.57" y1="67.43" x2="16.57" y2="69.96"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect class="cls-5" x="25.04" y="67.43" width="2.53" height="2.53" transform="translate(95 42.39) rotate(90)"/>
+          <line class="cls-8" x1="27.31" y1="69.96" x2="27.31" y2="67.43"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="25.04" y="71.5" width="2.53" height="2.53" transform="translate(99.07 46.46) rotate(90)"/>
+          <line class="cls-8" x1="27.31" y1="74.03" x2="27.31" y2="71.5"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <rect class="cls-5" x="3.4" y="68.23" width="8.1" height="5" transform="translate(-63.28 78.18) rotate(-90)"/>
+      <g>
+        <g>
+          <rect class="cls-5" x="1.82" y="71.5" width="2.53" height="2.53" transform="translate(-69.69 75.84) rotate(-90)"/>
+          <line class="cls-8" x1="2.08" y1="71.5" x2="2.08" y2="74.03"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="1.82" y="67.43" width="2.53" height="2.53" transform="translate(-65.62 71.78) rotate(-90)"/>
+          <line class="cls-8" x1="2.08" y1="67.43" x2="2.08" y2="69.96"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect class="cls-5" x="10.55" y="67.43" width="2.53" height="2.53" transform="translate(80.51 56.88) rotate(90)"/>
+          <line class="cls-8" x1="12.82" y1="69.96" x2="12.82" y2="67.43"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="10.55" y="71.5" width="2.53" height="2.53" transform="translate(84.58 60.95) rotate(90)"/>
+          <line class="cls-8" x1="12.82" y1="74.03" x2="12.82" y2="71.5"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <rect class="cls-5" x="32.38" y="80.97" width="8.1" height="5" transform="translate(-47.04 119.9) rotate(-90)"/>
+      <g>
+        <g>
+          <rect class="cls-5" x="30.8" y="84.24" width="2.53" height="2.53" transform="translate(-53.45 117.57) rotate(-90)"/>
+          <line class="cls-8" x1="31.06" y1="84.24" x2="31.06" y2="86.77"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="30.8" y="80.17" width="2.53" height="2.53" transform="translate(-49.38 113.5) rotate(-90)"/>
+          <line class="cls-8" x1="31.06" y1="80.17" x2="31.06" y2="82.7"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect class="cls-5" x="39.54" y="80.17" width="2.53" height="2.53" transform="translate(122.24 40.64) rotate(90)"/>
+          <line class="cls-8" x1="41.8" y1="82.7" x2="41.8" y2="80.17"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="39.54" y="84.24" width="2.53" height="2.53" transform="translate(126.31 44.71) rotate(90)"/>
+          <line class="cls-8" x1="41.8" y1="86.77" x2="41.8" y2="84.24"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <rect class="cls-5" x="17.89" y="80.97" width="8.1" height="5" transform="translate(-61.53 105.41) rotate(-90)"/>
+      <g>
+        <g>
+          <rect class="cls-5" x="16.31" y="84.24" width="2.53" height="2.53" transform="translate(-67.94 103.08) rotate(-90)"/>
+          <line class="cls-8" x1="16.57" y1="84.24" x2="16.57" y2="86.77"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="16.31" y="80.17" width="2.53" height="2.53" transform="translate(-63.87 99.01) rotate(-90)"/>
+          <line class="cls-8" x1="16.57" y1="80.17" x2="16.57" y2="82.7"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect class="cls-5" x="25.04" y="80.17" width="2.53" height="2.53" transform="translate(107.75 55.13) rotate(90)"/>
+          <line class="cls-8" x1="27.31" y1="82.7" x2="27.31" y2="80.17"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="25.04" y="84.24" width="2.53" height="2.53" transform="translate(111.81 59.2) rotate(90)"/>
+          <line class="cls-8" x1="27.31" y1="86.77" x2="27.31" y2="84.24"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <rect class="cls-5" x="3.4" y="80.97" width="8.1" height="5" transform="translate(-76.02 90.92) rotate(-90)"/>
+      <g>
+        <g>
+          <rect class="cls-5" x="1.82" y="84.24" width="2.53" height="2.53" transform="translate(-82.43 88.59) rotate(-90)"/>
+          <line class="cls-8" x1="2.08" y1="84.24" x2="2.08" y2="86.77"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="1.82" y="80.17" width="2.53" height="2.53" transform="translate(-78.36 84.52) rotate(-90)"/>
+          <line class="cls-8" x1="2.08" y1="80.17" x2="2.08" y2="82.7"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect class="cls-5" x="10.55" y="80.17" width="2.53" height="2.53" transform="translate(93.25 69.62) rotate(90)"/>
+          <line class="cls-8" x1="12.82" y1="82.7" x2="12.82" y2="80.17"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="10.55" y="84.24" width="2.53" height="2.53" transform="translate(97.32 73.69) rotate(90)"/>
+          <line class="cls-8" x1="12.82" y1="86.77" x2="12.82" y2="84.24"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <rect class="cls-5" x="32.38" y="45.36" width="8.1" height="5" transform="translate(-11.43 84.29) rotate(-90)"/>
+      <g>
+        <g>
+          <rect class="cls-5" x="30.8" y="48.63" width="2.53" height="2.53" transform="translate(-17.83 81.95) rotate(-90)"/>
+          <line class="cls-8" x1="31.06" y1="48.63" x2="31.06" y2="51.16"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="30.8" y="44.56" width="2.53" height="2.53" transform="translate(-13.76 77.88) rotate(-90)"/>
+          <line class="cls-8" x1="31.06" y1="44.56" x2="31.06" y2="47.09"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect class="cls-5" x="39.54" y="44.56" width="2.53" height="2.53" transform="translate(86.62 5.03) rotate(90)"/>
+          <line class="cls-8" x1="41.8" y1="47.09" x2="41.8" y2="44.56"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="39.54" y="48.63" width="2.53" height="2.53" transform="translate(90.69 9.1) rotate(90)"/>
+          <line class="cls-8" x1="41.8" y1="51.16" x2="41.8" y2="48.63"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <rect class="cls-5" x="17.89" y="45.36" width="8.1" height="5" transform="translate(-25.92 69.8) rotate(-90)"/>
+      <g>
+        <g>
+          <rect class="cls-5" x="16.31" y="48.63" width="2.53" height="2.53" transform="translate(-32.32 67.46) rotate(-90)"/>
+          <line class="cls-8" x1="16.57" y1="48.63" x2="16.57" y2="51.16"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="16.31" y="44.56" width="2.53" height="2.53" transform="translate(-28.25 63.39) rotate(-90)"/>
+          <line class="cls-8" x1="16.57" y1="44.56" x2="16.57" y2="47.09"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect class="cls-5" x="25.04" y="44.56" width="2.53" height="2.53" transform="translate(72.13 19.52) rotate(90)"/>
+          <line class="cls-8" x1="27.31" y1="47.09" x2="27.31" y2="44.56"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="25.04" y="48.63" width="2.53" height="2.53" transform="translate(76.2 23.59) rotate(90)"/>
+          <line class="cls-8" x1="27.31" y1="51.16" x2="27.31" y2="48.63"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <rect class="cls-5" x="3.4" y="45.36" width="8.1" height="5" transform="translate(-40.41 55.31) rotate(-90)"/>
+      <g>
+        <g>
+          <rect class="cls-5" x="1.82" y="48.63" width="2.53" height="2.53" transform="translate(-46.81 52.97) rotate(-90)"/>
+          <line class="cls-8" x1="2.08" y1="48.63" x2="2.08" y2="51.16"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="1.82" y="44.56" width="2.53" height="2.53" transform="translate(-42.75 48.9) rotate(-90)"/>
+          <line class="cls-8" x1="2.08" y1="44.56" x2="2.08" y2="47.09"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect class="cls-5" x="10.55" y="44.56" width="2.53" height="2.53" transform="translate(57.64 34.01) rotate(90)"/>
+          <line class="cls-8" x1="12.82" y1="47.09" x2="12.82" y2="44.56"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="10.55" y="48.63" width="2.53" height="2.53" transform="translate(61.71 38.08) rotate(90)"/>
+          <line class="cls-8" x1="12.82" y1="51.16" x2="12.82" y2="48.63"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <rect class="cls-5" x="91.25" y="56.37" width="8.1" height="5" transform="translate(36.43 154.17) rotate(-90)"/>
+      <g>
+        <g>
+          <rect class="cls-5" x="89.67" y="59.64" width="2.53" height="2.53" transform="translate(30.03 151.84) rotate(-90)"/>
+          <line class="cls-8" x1="89.93" y1="59.64" x2="89.93" y2="62.17"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="89.67" y="55.57" width="2.53" height="2.53" transform="translate(34.1 147.77) rotate(-90)"/>
+          <line class="cls-8" x1="89.93" y1="55.57" x2="89.93" y2="58.1"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect class="cls-5" x="98.41" y="55.57" width="2.53" height="2.53" transform="translate(156.5 -42.84) rotate(90)"/>
+          <line class="cls-8" x1="100.67" y1="58.1" x2="100.67" y2="55.57"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="98.41" y="59.64" width="2.53" height="2.53" transform="translate(160.57 -38.77) rotate(90)"/>
+          <line class="cls-8" x1="100.67" y1="62.17" x2="100.67" y2="59.64"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <rect class="cls-5" x="76.76" y="56.37" width="8.1" height="5" transform="translate(21.94 139.68) rotate(-90)"/>
+      <g>
+        <g>
+          <rect class="cls-5" x="75.18" y="59.64" width="2.53" height="2.53" transform="translate(15.54 137.35) rotate(-90)"/>
+          <line class="cls-8" x1="75.44" y1="59.64" x2="75.44" y2="62.17"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="75.18" y="55.57" width="2.53" height="2.53" transform="translate(19.61 133.28) rotate(-90)"/>
+          <line class="cls-8" x1="75.44" y1="55.57" x2="75.44" y2="58.1"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect class="cls-5" x="83.92" y="55.57" width="2.53" height="2.53" transform="translate(142.01 -28.35) rotate(90)"/>
+          <line class="cls-8" x1="86.18" y1="58.1" x2="86.18" y2="55.57"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="83.92" y="59.64" width="2.53" height="2.53" transform="translate(146.08 -24.28) rotate(90)"/>
+          <line class="cls-8" x1="86.18" y1="62.17" x2="86.18" y2="59.64"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <rect class="cls-5" x="62.27" y="56.37" width="8.1" height="5" transform="translate(7.45 125.19) rotate(-90)"/>
+      <g>
+        <g>
+          <rect class="cls-5" x="60.69" y="59.64" width="2.53" height="2.53" transform="translate(1.05 122.85) rotate(-90)"/>
+          <line class="cls-8" x1="60.95" y1="59.64" x2="60.95" y2="62.17"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="60.69" y="55.57" width="2.53" height="2.53" transform="translate(5.12 118.78) rotate(-90)"/>
+          <line class="cls-8" x1="60.95" y1="55.57" x2="60.95" y2="58.1"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect class="cls-5" x="69.43" y="55.57" width="2.53" height="2.53" transform="translate(127.52 -13.86) rotate(90)"/>
+          <line class="cls-8" x1="71.69" y1="58.1" x2="71.69" y2="55.57"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="69.43" y="59.64" width="2.53" height="2.53" transform="translate(131.59 -9.79) rotate(90)"/>
+          <line class="cls-8" x1="71.69" y1="62.17" x2="71.69" y2="59.64"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <rect class="cls-5" x="47.78" y="56.37" width="8.1" height="5" transform="translate(-7.04 110.7) rotate(-90)"/>
+      <g>
+        <g>
+          <rect class="cls-5" x="46.2" y="59.64" width="2.53" height="2.53" transform="translate(-13.44 108.36) rotate(-90)"/>
+          <line class="cls-8" x1="46.46" y1="59.64" x2="46.46" y2="62.17"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="46.2" y="55.57" width="2.53" height="2.53" transform="translate(-9.37 104.29) rotate(-90)"/>
+          <line class="cls-8" x1="46.46" y1="55.57" x2="46.46" y2="58.1"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect class="cls-5" x="54.94" y="55.57" width="2.53" height="2.53" transform="translate(113.03 .63) rotate(90)"/>
+          <line class="cls-8" x1="57.2" y1="58.1" x2="57.2" y2="55.57"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="54.94" y="59.64" width="2.53" height="2.53" transform="translate(117.1 4.7) rotate(90)"/>
+          <line class="cls-8" x1="57.2" y1="62.17" x2="57.2" y2="59.64"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <rect class="cls-5" x="91.25" y="68.23" width="8.1" height="5" transform="translate(24.57 166.03) rotate(-90)"/>
+      <g>
+        <g>
+          <rect class="cls-5" x="89.67" y="71.5" width="2.53" height="2.53" transform="translate(18.17 163.7) rotate(-90)"/>
+          <line class="cls-8" x1="89.93" y1="71.5" x2="89.93" y2="74.03"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="89.67" y="67.43" width="2.53" height="2.53" transform="translate(22.24 159.63) rotate(-90)"/>
+          <line class="cls-8" x1="89.93" y1="67.43" x2="89.93" y2="69.96"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect class="cls-5" x="98.41" y="67.43" width="2.53" height="2.53" transform="translate(168.37 -30.97) rotate(90)"/>
+          <line class="cls-8" x1="100.67" y1="69.96" x2="100.67" y2="67.43"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="98.41" y="71.5" width="2.53" height="2.53" transform="translate(172.44 -26.91) rotate(90)"/>
+          <line class="cls-8" x1="100.67" y1="74.03" x2="100.67" y2="71.5"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <rect class="cls-5" x="76.76" y="68.23" width="8.1" height="5" transform="translate(10.08 151.54) rotate(-90)"/>
+      <g>
+        <g>
+          <rect class="cls-5" x="75.18" y="71.5" width="2.53" height="2.53" transform="translate(3.68 149.21) rotate(-90)"/>
+          <line class="cls-8" x1="75.44" y1="71.5" x2="75.44" y2="74.03"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="75.18" y="67.43" width="2.53" height="2.53" transform="translate(7.75 145.14) rotate(-90)"/>
+          <line class="cls-8" x1="75.44" y1="67.43" x2="75.44" y2="69.96"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect class="cls-5" x="83.92" y="67.43" width="2.53" height="2.53" transform="translate(153.88 -16.48) rotate(90)"/>
+          <line class="cls-8" x1="86.18" y1="69.96" x2="86.18" y2="67.43"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="83.92" y="71.5" width="2.53" height="2.53" transform="translate(157.95 -12.41) rotate(90)"/>
+          <line class="cls-8" x1="86.18" y1="74.03" x2="86.18" y2="71.5"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <rect class="cls-5" x="62.27" y="68.23" width="8.1" height="5" transform="translate(-4.41 137.05) rotate(-90)"/>
+      <g>
+        <g>
+          <rect class="cls-5" x="60.69" y="71.5" width="2.53" height="2.53" transform="translate(-10.81 134.72) rotate(-90)"/>
+          <line class="cls-8" x1="60.95" y1="71.5" x2="60.95" y2="74.03"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="60.69" y="67.43" width="2.53" height="2.53" transform="translate(-6.74 130.65) rotate(-90)"/>
+          <line class="cls-8" x1="60.95" y1="67.43" x2="60.95" y2="69.96"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect class="cls-5" x="69.43" y="67.43" width="2.53" height="2.53" transform="translate(139.39 -1.99) rotate(90)"/>
+          <line class="cls-8" x1="71.69" y1="69.96" x2="71.69" y2="67.43"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="69.43" y="71.5" width="2.53" height="2.53" transform="translate(143.46 2.08) rotate(90)"/>
+          <line class="cls-8" x1="71.69" y1="74.03" x2="71.69" y2="71.5"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <rect class="cls-5" x="47.78" y="68.23" width="8.1" height="5" transform="translate(-18.9 122.56) rotate(-90)"/>
+      <g>
+        <g>
+          <rect class="cls-5" x="46.2" y="71.5" width="2.53" height="2.53" transform="translate(-25.3 120.23) rotate(-90)"/>
+          <line class="cls-8" x1="46.46" y1="71.5" x2="46.46" y2="74.03"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="46.2" y="67.43" width="2.53" height="2.53" transform="translate(-21.24 116.16) rotate(-90)"/>
+          <line class="cls-8" x1="46.46" y1="67.43" x2="46.46" y2="69.96"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect class="cls-5" x="54.94" y="67.43" width="2.53" height="2.53" transform="translate(124.9 12.5) rotate(90)"/>
+          <line class="cls-8" x1="57.2" y1="69.96" x2="57.2" y2="67.43"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="54.94" y="71.5" width="2.53" height="2.53" transform="translate(128.96 16.57) rotate(90)"/>
+          <line class="cls-8" x1="57.2" y1="74.03" x2="57.2" y2="71.5"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <rect class="cls-5" x="91.25" y="45.36" width="8.1" height="5" transform="translate(47.44 143.16) rotate(-90)"/>
+      <g>
+        <g>
+          <rect class="cls-5" x="89.67" y="48.63" width="2.53" height="2.53" transform="translate(41.04 140.83) rotate(-90)"/>
+          <line class="cls-8" x1="89.93" y1="48.63" x2="89.93" y2="51.16"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="89.67" y="44.56" width="2.53" height="2.53" transform="translate(45.11 136.76) rotate(-90)"/>
+          <line class="cls-8" x1="89.93" y1="44.56" x2="89.93" y2="47.09"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect class="cls-5" x="98.41" y="44.56" width="2.53" height="2.53" transform="translate(145.5 -53.85) rotate(90)"/>
+          <line class="cls-8" x1="100.67" y1="47.09" x2="100.67" y2="44.56"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="98.41" y="48.63" width="2.53" height="2.53" transform="translate(149.56 -49.78) rotate(90)"/>
+          <line class="cls-8" x1="100.67" y1="51.16" x2="100.67" y2="48.63"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <rect class="cls-5" x="76.76" y="45.36" width="8.1" height="5" transform="translate(32.95 128.67) rotate(-90)"/>
+      <g>
+        <g>
+          <rect class="cls-5" x="75.18" y="48.63" width="2.53" height="2.53" transform="translate(26.55 126.34) rotate(-90)"/>
+          <line class="cls-8" x1="75.44" y1="48.63" x2="75.44" y2="51.16"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="75.18" y="44.56" width="2.53" height="2.53" transform="translate(30.62 122.27) rotate(-90)"/>
+          <line class="cls-8" x1="75.44" y1="44.56" x2="75.44" y2="47.09"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect class="cls-5" x="83.92" y="44.56" width="2.53" height="2.53" transform="translate(131 -39.36) rotate(90)"/>
+          <line class="cls-8" x1="86.18" y1="47.09" x2="86.18" y2="44.56"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="83.92" y="48.63" width="2.53" height="2.53" transform="translate(135.07 -35.29) rotate(90)"/>
+          <line class="cls-8" x1="86.18" y1="51.16" x2="86.18" y2="48.63"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <rect class="cls-5" x="62.27" y="45.36" width="8.1" height="5" transform="translate(18.46 114.18) rotate(-90)"/>
+      <g>
+        <g>
+          <rect class="cls-5" x="60.69" y="48.63" width="2.53" height="2.53" transform="translate(12.06 111.85) rotate(-90)"/>
+          <line class="cls-8" x1="60.95" y1="48.63" x2="60.95" y2="51.16"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="60.69" y="44.56" width="2.53" height="2.53" transform="translate(16.13 107.78) rotate(-90)"/>
+          <line class="cls-8" x1="60.95" y1="44.56" x2="60.95" y2="47.09"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect class="cls-5" x="69.43" y="44.56" width="2.53" height="2.53" transform="translate(116.51 -24.87) rotate(90)"/>
+          <line class="cls-8" x1="71.69" y1="47.09" x2="71.69" y2="44.56"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="69.43" y="48.63" width="2.53" height="2.53" transform="translate(120.58 -20.8) rotate(90)"/>
+          <line class="cls-8" x1="71.69" y1="51.16" x2="71.69" y2="48.63"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <rect class="cls-5" x="47.78" y="45.36" width="8.1" height="5" transform="translate(3.97 99.69) rotate(-90)"/>
+      <g>
+        <g>
+          <rect class="cls-5" x="46.2" y="48.63" width="2.53" height="2.53" transform="translate(-2.43 97.35) rotate(-90)"/>
+          <line class="cls-8" x1="46.46" y1="48.63" x2="46.46" y2="51.16"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="46.2" y="44.56" width="2.53" height="2.53" transform="translate(1.64 93.29) rotate(-90)"/>
+          <line class="cls-8" x1="46.46" y1="44.56" x2="46.46" y2="47.09"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect class="cls-5" x="54.94" y="44.56" width="2.53" height="2.53" transform="translate(102.02 -10.37) rotate(90)"/>
+          <line class="cls-8" x1="57.2" y1="47.09" x2="57.2" y2="44.56"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="54.94" y="48.63" width="2.53" height="2.53" transform="translate(106.09 -6.31) rotate(90)"/>
+          <line class="cls-8" x1="57.2" y1="51.16" x2="57.2" y2="48.63"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <rect class="cls-5" x="34.41" y="125.16" width="8.1" height="5" transform="translate(76.93 255.32) rotate(180)"/>
+      <g>
+        <g>
+          <rect class="cls-5" x="39.24" y="130.76" width="2.53" height="2.53" transform="translate(81 264.05) rotate(180)"/>
+          <line class="cls-8" x1="39.24" y1="133.03" x2="41.76" y2="133.03"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="35.17" y="130.76" width="2.53" height="2.53" transform="translate(72.86 264.05) rotate(180)"/>
+          <line class="cls-8" x1="35.17" y1="133.03" x2="37.69" y2="133.03"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect class="cls-5" x="35.17" y="122.03" width="2.53" height="2.53"/>
+          <line class="cls-8" x1="37.69" y1="122.29" x2="35.17" y2="122.29"/>
+        </g>
+        <g>
+          <rect class="cls-5" x="39.24" y="122.03" width="2.53" height="2.53"/>
+          <line class="cls-8" x1="41.76" y1="122.29" x2="39.24" y2="122.29"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect class="cls-5" x="21.85" y="108.82" width="8.1" height="5" transform="translate(51.8 222.64) rotate(180)"/>
+        <g>
+          <g>
+            <rect class="cls-5" x="26.67" y="114.42" width="2.53" height="2.53" transform="translate(55.87 231.37) rotate(180)"/>
+            <line class="cls-8" x1="26.67" y1="116.69" x2="29.2" y2="116.69"/>
+          </g>
+          <g>
+            <rect class="cls-5" x="22.6" y="114.42" width="2.53" height="2.53" transform="translate(47.73 231.37) rotate(180)"/>
+            <line class="cls-8" x1="22.6" y1="116.69" x2="25.13" y2="116.69"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <rect class="cls-5" x="22.6" y="105.69" width="2.53" height="2.53"/>
+            <line class="cls-8" x1="25.13" y1="105.95" x2="22.6" y2="105.95"/>
+          </g>
+          <g>
+            <rect class="cls-5" x="26.67" y="105.69" width="2.53" height="2.53"/>
+            <line class="cls-8" x1="29.2" y1="105.95" x2="26.67" y2="105.95"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <rect class="cls-5" x="21.85" y="125.16" width="8.1" height="5" transform="translate(51.8 255.32) rotate(180)"/>
+        <g>
+          <g>
+            <rect class="cls-5" x="26.67" y="130.76" width="2.53" height="2.53" transform="translate(55.87 264.05) rotate(180)"/>
+            <line class="cls-8" x1="26.67" y1="133.03" x2="29.2" y2="133.03"/>
+          </g>
+          <g>
+            <rect class="cls-5" x="22.6" y="130.76" width="2.53" height="2.53" transform="translate(47.73 264.05) rotate(180)"/>
+            <line class="cls-8" x1="22.6" y1="133.03" x2="25.13" y2="133.03"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <rect class="cls-5" x="22.6" y="122.03" width="2.53" height="2.53"/>
+            <line class="cls-8" x1="25.13" y1="122.29" x2="22.6" y2="122.29"/>
+          </g>
+          <g>
+            <rect class="cls-5" x="26.67" y="122.03" width="2.53" height="2.53"/>
+            <line class="cls-8" x1="29.2" y1="122.29" x2="26.67" y2="122.29"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect class="cls-5" x="9.29" y="108.82" width="8.1" height="5" transform="translate(26.67 222.64) rotate(180)"/>
+        <g>
+          <g>
+            <rect class="cls-5" x="14.11" y="114.42" width="2.53" height="2.53" transform="translate(30.74 231.37) rotate(180)"/>
+            <line class="cls-8" x1="14.11" y1="116.69" x2="16.63" y2="116.69"/>
+          </g>
+          <g>
+            <rect class="cls-5" x="10.04" y="114.42" width="2.53" height="2.53" transform="translate(22.6 231.37) rotate(180)"/>
+            <line class="cls-8" x1="10.04" y1="116.69" x2="12.56" y2="116.69"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <rect class="cls-5" x="10.04" y="105.69" width="2.53" height="2.53"/>
+            <line class="cls-8" x1="12.56" y1="105.95" x2="10.04" y2="105.95"/>
+          </g>
+          <g>
+            <rect class="cls-5" x="14.11" y="105.69" width="2.53" height="2.53"/>
+            <line class="cls-8" x1="16.63" y1="105.95" x2="14.11" y2="105.95"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <rect class="cls-5" x="9.29" y="125.16" width="8.1" height="5" transform="translate(26.67 255.32) rotate(180)"/>
+        <g>
+          <g>
+            <rect class="cls-5" x="14.11" y="130.76" width="2.53" height="2.53" transform="translate(30.74 264.05) rotate(180)"/>
+            <line class="cls-8" x1="14.11" y1="133.03" x2="16.63" y2="133.03"/>
+          </g>
+          <g>
+            <rect class="cls-5" x="10.04" y="130.76" width="2.53" height="2.53" transform="translate(22.6 264.05) rotate(180)"/>
+            <line class="cls-8" x1="10.04" y1="133.03" x2="12.56" y2="133.03"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <rect class="cls-5" x="10.04" y="122.03" width="2.53" height="2.53"/>
+            <line class="cls-8" x1="12.56" y1="122.29" x2="10.04" y2="122.29"/>
+          </g>
+          <g>
+            <rect class="cls-5" x="14.11" y="122.03" width="2.53" height="2.53"/>
+            <line class="cls-8" x1="16.63" y1="122.29" x2="14.11" y2="122.29"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect class="cls-5" x="-3.28" y="108.82" width="8.1" height="5" transform="translate(1.54 222.64) rotate(180)"/>
+        <g>
+          <g>
+            <rect class="cls-5" x="1.54" y="114.42" width="2.53" height="2.53" transform="translate(5.61 231.37) rotate(180)"/>
+            <line class="cls-8" x1="1.54" y1="116.69" x2="4.07" y2="116.69"/>
+          </g>
+          <rect class="cls-5" x="-2.53" y="114.42" width="2.53" height="2.53" transform="translate(-2.53 231.37) rotate(180)"/>
+        </g>
+        <g>
+          <g>
+            <rect class="cls-5" x="-2.53" y="105.69" width="2.53" height="2.53"/>
+            <line class="cls-8" x1="0" y1="105.95" x2="-2.53" y2="105.95"/>
+          </g>
+          <g>
+            <rect class="cls-5" x="1.54" y="105.69" width="2.53" height="2.53"/>
+            <line class="cls-8" x1="4.07" y1="105.95" x2="1.54" y2="105.95"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <rect class="cls-5" x="-3.28" y="125.16" width="8.1" height="5" transform="translate(1.54 255.32) rotate(180)"/>
+        <g>
+          <g>
+            <rect class="cls-5" x="1.54" y="130.76" width="2.53" height="2.53" transform="translate(5.61 264.05) rotate(180)"/>
+            <line class="cls-8" x1="1.54" y1="133.03" x2="4.07" y2="133.03"/>
+          </g>
+          <rect class="cls-5" x="-2.53" y="130.76" width="2.53" height="2.53" transform="translate(-2.53 264.05) rotate(180)"/>
+        </g>
+        <g>
+          <g>
+            <rect class="cls-5" x="-2.53" y="122.03" width="2.53" height="2.53"/>
+            <line class="cls-8" x1="0" y1="122.29" x2="-2.53" y2="122.29"/>
+          </g>
+          <g>
+            <rect class="cls-5" x="1.54" y="122.03" width="2.53" height="2.53"/>
+            <line class="cls-8" x1="4.07" y1="122.29" x2="1.54" y2="122.29"/>
+          </g>
+        </g>
+      </g>
+    </g>
+
+
+  <!-- 1, 2, 3, 4, 5, 11 and 12 start here -->
+    <g *ngIf="table_1 == '0'" id="1" (click)="clickOnTable('1')">
+      <rect [ngClass]="{'activTable': selectedTBnum == '1' }" class="cls-7" x="51.78" y="78.04" width="7.62" height="5" transform="translate(136.14 24.95) rotate(90)"/>
+      <g>
+        <rect [ngClass]="{'activTable': selectedTBnum == '1' }" class="cls-7" x="58.7" y="77.48" width="2.53" height="2.53" transform="translate(138.71 18.79) rotate(90)"/>
+        <line [ngClass]="{'activTable': selectedTBnum == '1' }" class="cls-7" x1="60.96" y1="80.01" x2="60.96" y2="77.48"/>
+      </g>
+      <g>
+        <rect [ngClass]="{'activTable': selectedTBnum == '1' }" class="cls-7" x="58.7" y="81.55" width="2.53" height="2.53" transform="translate(142.78 22.86) rotate(90)"/>
+        <line [ngClass]="{'activTable': selectedTBnum == '1' }" class="cls-7" x1="60.96" y1="84.08" x2="60.96" y2="81.55"/>
+      </g>
+      <g>
+        <rect [ngClass]="{'activTable': selectedTBnum == '1' }" class="cls-7" x="49.96" y="81.55" width="2.53" height="2.53" transform="translate(-31.59 134.04) rotate(-90)"/>
+        <line [ngClass]="{'activTable': selectedTBnum == '1' }" class="cls-7" x1="50.22" y1="81.55" x2="50.22" y2="84.08"/>
+      </g>
+      <g>
+        <rect class="cls-1" x="58.7" y="85.71" width="2.53" height="2.53" transform="translate(146.94 27.02) rotate(90)"/>
+        <line class="cls-7" x1="60.96" y1="88.24" x2="60.96" y2="85.71"/>
+      </g>
+      <g>
+        <rect class="cls-1" x="49.96" y="85.71" width="2.53" height="2.53" transform="translate(-35.75 138.2) rotate(-90)"/>
+        <line class="cls-1" x1="50.22" y1="85.71" x2="50.22" y2="88.24"/>
+      </g>
+      <g>
+        <rect [ngClass]="{'activTable': selectedTBnum == '1' }" class="cls-7" x="49.96" y="77.48" width="2.53" height="2.53" transform="translate(-27.52 129.97) rotate(-90)"/>
+        <line [ngClass]="{'activTable': selectedTBnum == '1' }" class="cls-7" x1="50.22" y1="77.48" x2="50.22" y2="80.01"/>
+      </g>
+      <rect class="cls-1" x="53.69" y="84.61" width="3.81" height="5" transform="translate(142.7 31.52) rotate(90)"/>
+    </g>
+    <g *ngIf="table_2 == '0'" id="2" (click)="clickOnTable('2')">
+      <rect [ngClass]="{'activTable': selectedTBnum == '2' }" class="cls-7" x="69.31" y="78.07" width="7.62" height="5" transform="translate(153.7 7.45) rotate(90)"/>
+      <g>
+        <rect [ngClass]="{'activTable': selectedTBnum == '2' }" class="cls-7" x="76.23" y="77.51" width="2.53" height="2.53" transform="translate(156.27 1.28) rotate(90)"/>
+        <line [ngClass]="{'activTable': selectedTBnum == '2' }" class="cls-7" x1="78.5" y1="80.04" x2="78.5" y2="77.51"/>
+      </g>
+      <g>
+        <rect [ngClass]="{'activTable': selectedTBnum == '2' }" class="cls-7" x="76.23" y="81.58" width="2.53" height="2.53" transform="translate(160.34 5.35) rotate(90)"/>
+        <line [ngClass]="{'activTable': selectedTBnum == '2' }" class="cls-7" x1="78.5" y1="84.11" x2="78.5" y2="81.58"/>
+      </g>
+      <g>
+        <rect [ngClass]="{'activTable': selectedTBnum == '2' }" class="cls-7" x="67.49" y="81.58" width="2.53" height="2.53" transform="translate(-14.09 151.6) rotate(-90)"/>
+        <line [ngClass]="{'activTable': selectedTBnum == '2' }" class="cls-7" x1="67.76" y1="81.58" x2="67.76" y2="84.11"/>
+      </g>
+      <g>
+        <rect class="cls-1" x="76.23" y="85.74" width="2.53" height="2.53" transform="translate(164.5 9.51) rotate(90)"/>
+        <line class="cls-7" x1="78.5" y1="88.27" x2="78.5" y2="85.74"/>
+      </g>
+      <g>
+        <rect class="cls-1" x="67.49" y="85.74" width="2.53" height="2.53" transform="translate(-18.25 155.76) rotate(-90)"/>
+        <line class="cls-7" x1="67.76" y1="85.74" x2="67.76" y2="88.27"/>
+      </g>
+      <g>
+        <rect [ngClass]="{'activTable': selectedTBnum == '2' }" class="cls-7" x="67.49" y="77.51" width="2.53" height="2.53" transform="translate(-10.02 147.53) rotate(-90)"/>
+        <line [ngClass]="{'activTable': selectedTBnum == '2' }" class="cls-7" x1="67.76" y1="77.51" x2="67.76" y2="80.04"/>
+      </g>
+      <rect class="cls-1" x="71.22" y="84.64" width="3.81" height="5" transform="translate(160.26 14.01) rotate(90)"/>
+    </g>
+    <g *ngIf="table_3 == '0'" id="3" (click)="clickOnTable('3')">
+      <rect [ngClass]="{'activTable': selectedTBnum == '3' }" class="cls-7" x="86.85" y="78.13" width="7.62" height="5" transform="translate(171.29 -10.03) rotate(90)"/>
+      <g>
+        <rect [ngClass]="{'activTable': selectedTBnum == '3' }" class="cls-7" x="93.76" y="77.57" width="2.53" height="2.53" transform="translate(173.86 -16.19) rotate(90)"/>
+        <line [ngClass]="{'activTable': selectedTBnum == '3' }" class="cls-7" x1="96.03" y1="80.1" x2="96.03" y2="77.57"/>
+      </g>
+      <g>
+        <rect [ngClass]="{'activTable': selectedTBnum == '3' }" class="cls-7" x="93.76" y="81.64" width="2.53" height="2.53" transform="translate(177.93 -12.12) rotate(90)"/>
+        <line [ngClass]="{'activTable': selectedTBnum == '3' }" class="cls-7" x1="96.03" y1="84.17" x2="96.03" y2="81.64"/>
+      </g>
+      <g>
+        <rect [ngClass]="{'activTable': selectedTBnum == '3' }" class="cls-7" x="85.03" y="81.64" width="2.53" height="2.53" transform="translate(3.39 169.19) rotate(-90)"/>
+        <line [ngClass]="{'activTable': selectedTBnum == '3' }" class="cls-7" x1="85.29" y1="81.64" x2="85.29" y2="84.17"/>
+      </g>
+      <g>
+        <rect class="cls-1" x="93.76" y="85.8" width="2.53" height="2.53" transform="translate(182.09 -7.97) rotate(90)"/>
+        <line class="cls-7" x1="96.03" y1="88.33" x2="96.03" y2="85.8"/>
+      </g>
+      <g>
+        <rect class="cls-1" x="85.03" y="85.8" width="2.53" height="2.53" transform="translate(-.77 173.35) rotate(-90)"/>
+        <line class="cls-7" x1="85.29" y1="85.8" x2="85.29" y2="88.33"/>
+      </g>
+      <g>
+        <rect [ngClass]="{'activTable': selectedTBnum == '3' }" class="cls-7" x="85.03" y="77.57" width="2.53" height="2.53" transform="translate(7.46 165.12) rotate(-90)"/>
+        <line [ngClass]="{'activTable': selectedTBnum == '3' }" class="cls-7" x1="85.29" y1="77.57" x2="85.29" y2="80.1"/>
+      </g>
+      <rect class="cls-1" x="88.75" y="84.69" width="3.81" height="5" transform="translate(177.85 -3.46) rotate(90)"/>
+    </g>
+    <g>
+      <rect class="cls-5" x="86.77" y="103.3" width="35.58" height="2.53" transform="translate(209.13 0) rotate(90)"/>
+      <line class="cls-8" x1="105.57" y1="122.35" x2="105.57" y2="86.77"/>
+    </g>
+    <g *ngIf="table_4 == '0'" id="4" (click)="clickOnTable('4')">
+      <rect [ngClass]="{'activTable': selectedTBnum == '4' }" class="cls-7" x="95.75" y="92.48" width="8.1" height="5" transform="translate(194.78 -4.82) rotate(90)"/>
+      <g>
+        <g>
+          <rect [ngClass]="{'activTable': selectedTBnum == '4' }" class="cls-7" x="94.16" y="95.75" width="2.53" height="2.53" transform="translate(-1.59 192.44) rotate(-90)"/>
+          <line [ngClass]="{'activTable': selectedTBnum == '4' }" class="cls-7" x1="94.43" y1="95.75" x2="94.43" y2="98.28"/>
+        </g>
+        <g>
+          <rect [ngClass]="{'activTable': selectedTBnum == '4' }" class="cls-7" x="94.16" y="91.68" width="2.53" height="2.53" transform="translate(2.48 188.37) rotate(-90)"/>
+          <line [ngClass]="{'activTable': selectedTBnum == '4' }" class="cls-7" x1="94.43" y1="91.68" x2="94.43" y2="94.21"/>
+        </g>
+      </g>
+    </g>
+    <g *ngIf="table_5 == '0'" id="5" (click)="clickOnTable('5')">
+      <rect [ngClass]="{'activTable': selectedTBnum == '5' }" class="cls-7" x="95.75" y="103.72" width="8.1" height="5" transform="translate(206.02 6.43) rotate(90)"/>
+      <g>
+        <g>
+          <rect [ngClass]="{'activTable': selectedTBnum == '5' }" class="cls-7" x="94.16" y="106.99" width="2.53" height="2.53" transform="translate(-12.83 203.68) rotate(-90)"/>
+          <line [ngClass]="{'activTable': selectedTBnum == '5' }" class="cls-7" x1="94.43" y1="106.99" x2="94.43" y2="109.52"/>
+        </g>
+        <g>
+          <rect [ngClass]="{'activTable': selectedTBnum == '5' }" class="cls-7" x="94.16" y="102.92" width="2.53" height="2.53" transform="translate(-8.76 199.62) rotate(-90)"/>
+          <line [ngClass]="{'activTable': selectedTBnum == '5' }" class="cls-7" x1="94.43" y1="102.92" x2="94.43" y2="105.45"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect class="cls-5" x="81.13" y="92.85" width="8.1" height="5" transform="translate(180.53 10.17) rotate(90)"/>
+        <g>
+          <g>
+            <rect class="cls-5" x="88.29" y="92.05" width="2.53" height="2.53" transform="translate(182.87 3.77) rotate(90)"/>
+            <line class="cls-8" x1="90.55" y1="94.58" x2="90.55" y2="92.05"/>
+          </g>
+          <g>
+            <rect class="cls-5" x="88.29" y="96.12" width="2.53" height="2.53" transform="translate(186.94 7.84) rotate(90)"/>
+            <line class="cls-8" x1="90.55" y1="98.65" x2="90.55" y2="96.12"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <rect class="cls-5" x="79.55" y="96.12" width="2.53" height="2.53" transform="translate(-16.57 178.2) rotate(-90)"/>
+            <line class="cls-8" x1="79.81" y1="96.12" x2="79.81" y2="98.65"/>
+          </g>
+          <g>
+            <rect class="cls-5" x="79.55" y="92.05" width="2.53" height="2.53" transform="translate(-12.5 174.13) rotate(-90)"/>
+            <line class="cls-8" x1="79.81" y1="92.05" x2="79.81" y2="94.58"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <rect class="cls-1" x="88.29" y="100.41" width="2.53" height="2.53" transform="translate(191.22 12.12) rotate(90)"/>
+        <line class="cls-7" x1="90.55" y1="102.94" x2="90.55" y2="100.41"/>
+      </g>
+      <g>
+        <rect class="cls-1" x="79.55" y="100.41" width="2.53" height="2.53" transform="translate(-20.86 182.48) rotate(-90)"/>
+        <line class="cls-7" x1="79.81" y1="100.41" x2="79.81" y2="102.94"/>
+      </g>
+      <rect class="cls-1" x="83.27" y="99.3" width="3.81" height="5" transform="translate(186.98 16.62) rotate(90)"/>
+      <g>
+        <rect class="cls-5" x="81.13" y="105.76" width="8.1" height="5" transform="translate(193.44 23.08) rotate(90)"/>
+        <g>
+          <g>
+            <rect class="cls-5" x="88.29" y="104.96" width="2.53" height="2.53" transform="translate(195.77 16.67) rotate(90)"/>
+            <line class="cls-8" x1="90.55" y1="107.49" x2="90.55" y2="104.96"/>
+          </g>
+          <g>
+            <rect class="cls-5" x="88.29" y="109.03" width="2.53" height="2.53" transform="translate(199.84 20.74) rotate(90)"/>
+            <line class="cls-8" x1="90.55" y1="111.56" x2="90.55" y2="109.03"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <rect class="cls-5" x="79.55" y="109.03" width="2.53" height="2.53" transform="translate(-29.48 191.1) rotate(-90)"/>
+            <line class="cls-8" x1="79.81" y1="109.03" x2="79.81" y2="111.56"/>
+          </g>
+          <g>
+            <rect class="cls-5" x="79.55" y="104.96" width="2.53" height="2.53" transform="translate(-25.41 187.03) rotate(-90)"/>
+            <line class="cls-8" x1="79.81" y1="104.96" x2="79.81" y2="107.49"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect class="cls-5" x="64.38" y="92.85" width="8.1" height="5" transform="translate(163.78 26.92) rotate(90)"/>
+        <g>
+          <g>
+            <rect class="cls-5" x="71.53" y="92.05" width="2.53" height="2.53" transform="translate(166.11 20.52) rotate(90)"/>
+            <line class="cls-8" x1="73.8" y1="94.58" x2="73.8" y2="92.05"/>
+          </g>
+          <g>
+            <rect class="cls-5" x="71.53" y="96.12" width="2.53" height="2.53" transform="translate(170.18 24.59) rotate(90)"/>
+            <line class="cls-8" x1="73.8" y1="98.65" x2="73.8" y2="96.12"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <rect class="cls-5" x="62.79" y="96.12" width="2.53" height="2.53" transform="translate(-33.33 161.44) rotate(-90)"/>
+            <line class="cls-8" x1="63.06" y1="96.12" x2="63.06" y2="98.65"/>
+          </g>
+          <g>
+            <rect class="cls-5" x="62.79" y="92.05" width="2.53" height="2.53" transform="translate(-29.26 157.37) rotate(-90)"/>
+            <line class="cls-8" x1="63.06" y1="92.05" x2="63.06" y2="94.58"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <rect class="cls-1" x="71.53" y="100.41" width="2.53" height="2.53" transform="translate(174.47 28.88) rotate(90)"/>
+        <line class="cls-7" x1="73.8" y1="102.94" x2="73.8" y2="100.41"/>
+      </g>
+      <g>
+        <rect class="cls-1" x="62.79" y="100.41" width="2.53" height="2.53" transform="translate(-37.61 165.73) rotate(-90)"/>
+        <line class="cls-7" x1="63.06" y1="100.41" x2="63.06" y2="102.94"/>
+      </g>
+      <rect class="cls-1" x="66.52" y="99.3" width="3.81" height="5" transform="translate(170.23 33.38) rotate(90)"/>
+      <g>
+        <rect class="cls-5" x="64.38" y="105.76" width="8.1" height="5" transform="translate(176.68 39.83) rotate(90)"/>
+        <g>
+          <g>
+            <rect class="cls-5" x="71.53" y="104.96" width="2.53" height="2.53" transform="translate(179.02 33.43) rotate(90)"/>
+            <line class="cls-8" x1="73.8" y1="107.49" x2="73.8" y2="104.96"/>
+          </g>
+          <g>
+            <rect class="cls-5" x="71.53" y="109.03" width="2.53" height="2.53" transform="translate(183.09 37.5) rotate(90)"/>
+            <line class="cls-8" x1="73.8" y1="111.56" x2="73.8" y2="109.03"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <rect class="cls-5" x="62.79" y="109.03" width="2.53" height="2.53" transform="translate(-46.23 174.35) rotate(-90)"/>
+            <line class="cls-8" x1="63.06" y1="109.03" x2="63.06" y2="111.56"/>
+          </g>
+          <g>
+            <rect class="cls-5" x="62.79" y="104.96" width="2.53" height="2.53" transform="translate(-42.16 170.28) rotate(-90)"/>
+            <line class="cls-8" x1="63.06" y1="104.96" x2="63.06" y2="107.49"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g>
+      <g *ngIf="table_12 == '0'" id="12" (click)="clickOnTable('12')">
+        <rect [ngClass]="{'activTable': selectedTBnum == '12' }" class="cls-7" x="47.78" y="96" width="8.1" height="5" transform="translate(150.33 46.68) rotate(90)"/>
+        <g>
+          <g>
+            <rect [ngClass]="{'activTable': selectedTBnum == '12' }" class="cls-7" x="54.93" y="95.21" width="2.53" height="2.53" transform="translate(152.67 40.27) rotate(90)"/>
+            <line [ngClass]="{'activTable': selectedTBnum == '12' }" class="cls-7" x1="57.2" y1="97.73" x2="57.2" y2="95.21"/>
+          </g>
+          <g>
+            <rect [ngClass]="{'activTable': selectedTBnum == '12' }" class="cls-7" x="54.93" y="99.28" width="2.53" height="2.53" transform="translate(156.74 44.34) rotate(90)"/>
+            <line [ngClass]="{'activTable': selectedTBnum == '12' }" class="cls-7" x1="57.2" y1="101.8" x2="57.2" y2="99.28"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <rect [ngClass]="{'activTable': selectedTBnum == '12' }" class="cls-7" x="46.2" y="99.28" width="2.53" height="2.53" transform="translate(-53.08 148) rotate(-90)"/>
+            <line [ngClass]="{'activTable': selectedTBnum == '12' }" class="cls-7" x1="46.46" y1="99.28" x2="46.46" y2="101.8"/>
+          </g>
+          <g>
+            <rect [ngClass]="{'activTable': selectedTBnum == '12' }" class="cls-7" x="46.2" y="95.21" width="2.53" height="2.53" transform="translate(-49.01 143.93) rotate(-90)"/>
+            <line [ngClass]="{'activTable': selectedTBnum == '12' }" class="cls-7" x1="46.46" y1="95.21" x2="46.46" y2="97.73"/>
+          </g>
+        </g>
+      </g>
+      <g *ngIf="table_11 == '0'" id="11" (click)="clickOnTable('11')">
+        <rect [ngClass]="{'activTable': selectedTBnum == '11' }" class="cls-7" x="47.78" y="105.42" width="8.1" height="5" transform="translate(159.75 56.09) rotate(90)"/>
+        <g>
+          <g>
+            <rect [ngClass]="{'activTable': selectedTBnum == '11' }" class="cls-7" x="54.93" y="104.62" width="2.53" height="2.53" transform="translate(162.08 49.69) rotate(90)"/>
+            <line [ngClass]="{'activTable': selectedTBnum == '11' }" class="cls-7" x1="57.2" y1="107.15" x2="57.2" y2="104.62"/>
+          </g>
+          <g>
+            <rect [ngClass]="{'activTable': selectedTBnum == '11' }" class="cls-7" x="54.93" y="108.69" width="2.53" height="2.53" transform="translate(166.15 53.76) rotate(90)"/>
+            <line [ngClass]="{'activTable': selectedTBnum == '11' }" class="cls-7" x1="57.2" y1="111.22" x2="57.2" y2="108.69"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <rect [ngClass]="{'activTable': selectedTBnum == '11' }" class="cls-7" x="46.2" y="108.69" width="2.53" height="2.53" transform="translate(-62.5 157.41) rotate(-90)"/>
+            <line [ngClass]="{'activTable': selectedTBnum == '11' }" class="cls-7" x1="46.46" y1="108.69" x2="46.46" y2="111.22"/>
+          </g>
+          <g>
+            <rect [ngClass]="{'activTable': selectedTBnum == '11' }" class="cls-7" x="46.2" y="104.62" width="2.53" height="2.53" transform="translate(-58.43 153.34) rotate(-90)"/>
+            <line [ngClass]="{'activTable': selectedTBnum == '11' }" class="cls-7" x1="46.46" y1="104.62" x2="46.46" y2="107.15"/>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <!-- //////////// -->
+    <g *ngIf="table_1 == '1'">
+      <rect class="cls-red cls-7" x="51.78" y="78.04" width="7.62" height="5" transform="translate(136.14 24.95) rotate(90)"/>
+      <g>
+        <rect class="cls-red cls-7" x="58.7" y="77.48" width="2.53" height="2.53" transform="translate(138.71 18.79) rotate(90)"/>
+        <line class="cls-red cls-7" x1="60.96" y1="80.01" x2="60.96" y2="77.48"/>
+      </g>
+      <g>
+        <rect class="cls-red cls-7" x="58.7" y="81.55" width="2.53" height="2.53" transform="translate(142.78 22.86) rotate(90)"/>
+        <line class="cls-red cls-7" x1="60.96" y1="84.08" x2="60.96" y2="81.55"/>
+      </g>
+      <g>
+        <rect class="cls-red cls-7" x="49.96" y="81.55" width="2.53" height="2.53" transform="translate(-31.59 134.04) rotate(-90)"/>
+        <line class="cls-red cls-7" x1="50.22" y1="81.55" x2="50.22" y2="84.08"/>
+      </g>
+      <g>
+        <rect class="cls-1" x="58.7" y="85.71" width="2.53" height="2.53" transform="translate(146.94 27.02) rotate(90)"/>
+        <line class="cls-7" x1="60.96" y1="88.24" x2="60.96" y2="85.71"/>
+      </g>
+      <g>
+        <rect class="cls-1" x="49.96" y="85.71" width="2.53" height="2.53" transform="translate(-35.75 138.2) rotate(-90)"/>
+        <line class="cls-1" x1="50.22" y1="85.71" x2="50.22" y2="88.24"/>
+      </g>
+      <g>
+        <rect class="cls-red cls-7" x="49.96" y="77.48" width="2.53" height="2.53" transform="translate(-27.52 129.97) rotate(-90)"/>
+        <line class="cls-red cls-7" x1="50.22" y1="77.48" x2="50.22" y2="80.01"/>
+      </g>
+      <rect class="cls-1" x="53.69" y="84.61" width="3.81" height="5" transform="translate(142.7 31.52) rotate(90)"/>
+    </g>
+    <g *ngIf="table_2 == '1'">
+      <rect class="cls-red cls-7" x="69.31" y="78.07" width="7.62" height="5" transform="translate(153.7 7.45) rotate(90)"/>
+      <g>
+        <rect class="cls-red cls-7" x="76.23" y="77.51" width="2.53" height="2.53" transform="translate(156.27 1.28) rotate(90)"/>
+        <line class="cls-red cls-7" x1="78.5" y1="80.04" x2="78.5" y2="77.51"/>
+      </g>
+      <g>
+        <rect class="cls-red cls-7" x="76.23" y="81.58" width="2.53" height="2.53" transform="translate(160.34 5.35) rotate(90)"/>
+        <line class="cls-red cls-7" x1="78.5" y1="84.11" x2="78.5" y2="81.58"/>
+      </g>
+      <g>
+        <rect class="cls-red cls-7" x="67.49" y="81.58" width="2.53" height="2.53" transform="translate(-14.09 151.6) rotate(-90)"/>
+        <line class="cls-red cls-7" x1="67.76" y1="81.58" x2="67.76" y2="84.11"/>
+      </g>
+      <g>
+        <rect class="cls-1" x="76.23" y="85.74" width="2.53" height="2.53" transform="translate(164.5 9.51) rotate(90)"/>
+        <line class="cls-7" x1="78.5" y1="88.27" x2="78.5" y2="85.74"/>
+      </g>
+      <g>
+        <rect class="cls-1" x="67.49" y="85.74" width="2.53" height="2.53" transform="translate(-18.25 155.76) rotate(-90)"/>
+        <line class="cls-7" x1="67.76" y1="85.74" x2="67.76" y2="88.27"/>
+      </g>
+      <g>
+        <rect class="cls-red cls-7" x="67.49" y="77.51" width="2.53" height="2.53" transform="translate(-10.02 147.53) rotate(-90)"/>
+        <line class="cls-red cls-7" x1="67.76" y1="77.51" x2="67.76" y2="80.04"/>
+      </g>
+      <rect class="cls-1" x="71.22" y="84.64" width="3.81" height="5" transform="translate(160.26 14.01) rotate(90)"/>
+    </g>
+    <g *ngIf="table_3 == '1'">
+      <rect class="cls-red cls-7" x="86.85" y="78.13" width="7.62" height="5" transform="translate(171.29 -10.03) rotate(90)"/>
+      <g>
+        <rect class="cls-red cls-7" x="93.76" y="77.57" width="2.53" height="2.53" transform="translate(173.86 -16.19) rotate(90)"/>
+        <line class="cls-red cls-7" x1="96.03" y1="80.1" x2="96.03" y2="77.57"/>
+      </g>
+      <g>
+        <rect class="cls-red cls-7" x="93.76" y="81.64" width="2.53" height="2.53" transform="translate(177.93 -12.12) rotate(90)"/>
+        <line class="cls-red cls-7" x1="96.03" y1="84.17" x2="96.03" y2="81.64"/>
+      </g>
+      <g>
+        <rect class="cls-red cls-7" x="85.03" y="81.64" width="2.53" height="2.53" transform="translate(3.39 169.19) rotate(-90)"/>
+        <line class="cls-red cls-7" x1="85.29" y1="81.64" x2="85.29" y2="84.17"/>
+      </g>
+      <g>
+        <rect class="cls-1" x="93.76" y="85.8" width="2.53" height="2.53" transform="translate(182.09 -7.97) rotate(90)"/>
+        <line class="cls-7" x1="96.03" y1="88.33" x2="96.03" y2="85.8"/>
+      </g>
+      <g>
+        <rect class="cls-1" x="85.03" y="85.8" width="2.53" height="2.53" transform="translate(-.77 173.35) rotate(-90)"/>
+        <line class="cls-7" x1="85.29" y1="85.8" x2="85.29" y2="88.33"/>
+      </g>
+      <g>
+        <rect class="cls-red cls-7" x="85.03" y="77.57" width="2.53" height="2.53" transform="translate(7.46 165.12) rotate(-90)"/>
+        <line class="cls-red cls-7" x1="85.29" y1="77.57" x2="85.29" y2="80.1"/>
+      </g>
+      <rect class="cls-1" x="88.75" y="84.69" width="3.81" height="5" transform="translate(177.85 -3.46) rotate(90)"/>
+    </g>
+    <g>
+      <rect class="cls-5" x="86.77" y="103.3" width="35.58" height="2.53" transform="translate(209.13 0) rotate(90)"/>
+      <line class="cls-8" x1="105.57" y1="122.35" x2="105.57" y2="86.77"/>
+    </g>
+    <g *ngIf="table_4 == '1'">
+      <rect class="cls-red cls-7" x="95.75" y="92.48" width="8.1" height="5" transform="translate(194.78 -4.82) rotate(90)"/>
+      <g>
+        <g>
+          <rect class="cls-red cls-7" x="94.16" y="95.75" width="2.53" height="2.53" transform="translate(-1.59 192.44) rotate(-90)"/>
+          <line class="cls-red cls-7" x1="94.43" y1="95.75" x2="94.43" y2="98.28"/>
+        </g>
+        <g>
+          <rect class="cls-red cls-7" x="94.16" y="91.68" width="2.53" height="2.53" transform="translate(2.48 188.37) rotate(-90)"/>
+          <line class="cls-red cls-7" x1="94.43" y1="91.68" x2="94.43" y2="94.21"/>
+        </g>
+      </g>
+    </g>
+    <g *ngIf="table_5 == '1'">
+      <rect class="cls-red cls-7" x="95.75" y="103.72" width="8.1" height="5" transform="translate(206.02 6.43) rotate(90)"/>
+      <g>
+        <g>
+          <rect class="cls-red cls-7" x="94.16" y="106.99" width="2.53" height="2.53" transform="translate(-12.83 203.68) rotate(-90)"/>
+          <line class="cls-red cls-7" x1="94.43" y1="106.99" x2="94.43" y2="109.52"/>
+        </g>
+        <g>
+          <rect class="cls-red cls-7" x="94.16" y="102.92" width="2.53" height="2.53" transform="translate(-8.76 199.62) rotate(-90)"/>
+          <line class="cls-red cls-7" x1="94.43" y1="102.92" x2="94.43" y2="105.45"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect class="cls-5" x="81.13" y="92.85" width="8.1" height="5" transform="translate(180.53 10.17) rotate(90)"/>
+        <g>
+          <g>
+            <rect class="cls-5" x="88.29" y="92.05" width="2.53" height="2.53" transform="translate(182.87 3.77) rotate(90)"/>
+            <line class="cls-8" x1="90.55" y1="94.58" x2="90.55" y2="92.05"/>
+          </g>
+          <g>
+            <rect class="cls-5" x="88.29" y="96.12" width="2.53" height="2.53" transform="translate(186.94 7.84) rotate(90)"/>
+            <line class="cls-8" x1="90.55" y1="98.65" x2="90.55" y2="96.12"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <rect class="cls-5" x="79.55" y="96.12" width="2.53" height="2.53" transform="translate(-16.57 178.2) rotate(-90)"/>
+            <line class="cls-8" x1="79.81" y1="96.12" x2="79.81" y2="98.65"/>
+          </g>
+          <g>
+            <rect class="cls-5" x="79.55" y="92.05" width="2.53" height="2.53" transform="translate(-12.5 174.13) rotate(-90)"/>
+            <line class="cls-8" x1="79.81" y1="92.05" x2="79.81" y2="94.58"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <rect class="cls-1" x="88.29" y="100.41" width="2.53" height="2.53" transform="translate(191.22 12.12) rotate(90)"/>
+        <line class="cls-7" x1="90.55" y1="102.94" x2="90.55" y2="100.41"/>
+      </g>
+      <g>
+        <rect class="cls-1" x="79.55" y="100.41" width="2.53" height="2.53" transform="translate(-20.86 182.48) rotate(-90)"/>
+        <line class="cls-7" x1="79.81" y1="100.41" x2="79.81" y2="102.94"/>
+      </g>
+      <rect class="cls-1" x="83.27" y="99.3" width="3.81" height="5" transform="translate(186.98 16.62) rotate(90)"/>
+      <g>
+        <rect class="cls-5" x="81.13" y="105.76" width="8.1" height="5" transform="translate(193.44 23.08) rotate(90)"/>
+        <g>
+          <g>
+            <rect class="cls-5" x="88.29" y="104.96" width="2.53" height="2.53" transform="translate(195.77 16.67) rotate(90)"/>
+            <line class="cls-8" x1="90.55" y1="107.49" x2="90.55" y2="104.96"/>
+          </g>
+          <g>
+            <rect class="cls-5" x="88.29" y="109.03" width="2.53" height="2.53" transform="translate(199.84 20.74) rotate(90)"/>
+            <line class="cls-8" x1="90.55" y1="111.56" x2="90.55" y2="109.03"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <rect class="cls-5" x="79.55" y="109.03" width="2.53" height="2.53" transform="translate(-29.48 191.1) rotate(-90)"/>
+            <line class="cls-8" x1="79.81" y1="109.03" x2="79.81" y2="111.56"/>
+          </g>
+          <g>
+            <rect class="cls-5" x="79.55" y="104.96" width="2.53" height="2.53" transform="translate(-25.41 187.03) rotate(-90)"/>
+            <line class="cls-8" x1="79.81" y1="104.96" x2="79.81" y2="107.49"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect class="cls-5" x="64.38" y="92.85" width="8.1" height="5" transform="translate(163.78 26.92) rotate(90)"/>
+        <g>
+          <g>
+            <rect class="cls-5" x="71.53" y="92.05" width="2.53" height="2.53" transform="translate(166.11 20.52) rotate(90)"/>
+            <line class="cls-8" x1="73.8" y1="94.58" x2="73.8" y2="92.05"/>
+          </g>
+          <g>
+            <rect class="cls-5" x="71.53" y="96.12" width="2.53" height="2.53" transform="translate(170.18 24.59) rotate(90)"/>
+            <line class="cls-8" x1="73.8" y1="98.65" x2="73.8" y2="96.12"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <rect class="cls-5" x="62.79" y="96.12" width="2.53" height="2.53" transform="translate(-33.33 161.44) rotate(-90)"/>
+            <line class="cls-8" x1="63.06" y1="96.12" x2="63.06" y2="98.65"/>
+          </g>
+          <g>
+            <rect class="cls-5" x="62.79" y="92.05" width="2.53" height="2.53" transform="translate(-29.26 157.37) rotate(-90)"/>
+            <line class="cls-8" x1="63.06" y1="92.05" x2="63.06" y2="94.58"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <rect class="cls-1" x="71.53" y="100.41" width="2.53" height="2.53" transform="translate(174.47 28.88) rotate(90)"/>
+        <line class="cls-7" x1="73.8" y1="102.94" x2="73.8" y2="100.41"/>
+      </g>
+      <g>
+        <rect class="cls-1" x="62.79" y="100.41" width="2.53" height="2.53" transform="translate(-37.61 165.73) rotate(-90)"/>
+        <line class="cls-7" x1="63.06" y1="100.41" x2="63.06" y2="102.94"/>
+      </g>
+      <rect class="cls-1" x="66.52" y="99.3" width="3.81" height="5" transform="translate(170.23 33.38) rotate(90)"/>
+      <g>
+        <rect class="cls-5" x="64.38" y="105.76" width="8.1" height="5" transform="translate(176.68 39.83) rotate(90)"/>
+        <g>
+          <g>
+            <rect class="cls-5" x="71.53" y="104.96" width="2.53" height="2.53" transform="translate(179.02 33.43) rotate(90)"/>
+            <line class="cls-8" x1="73.8" y1="107.49" x2="73.8" y2="104.96"/>
+          </g>
+          <g>
+            <rect class="cls-5" x="71.53" y="109.03" width="2.53" height="2.53" transform="translate(183.09 37.5) rotate(90)"/>
+            <line class="cls-8" x1="73.8" y1="111.56" x2="73.8" y2="109.03"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <rect class="cls-5" x="62.79" y="109.03" width="2.53" height="2.53" transform="translate(-46.23 174.35) rotate(-90)"/>
+            <line class="cls-8" x1="63.06" y1="109.03" x2="63.06" y2="111.56"/>
+          </g>
+          <g>
+            <rect class="cls-5" x="62.79" y="104.96" width="2.53" height="2.53" transform="translate(-42.16 170.28) rotate(-90)"/>
+            <line class="cls-8" x1="63.06" y1="104.96" x2="63.06" y2="107.49"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g>
+      <g *ngIf="table_12 == '1'">
+        <rect class="cls-red cls-7" x="47.78" y="96" width="8.1" height="5" transform="translate(150.33 46.68) rotate(90)"/>
+        <g>
+          <g>
+            <rect class="cls-red cls-7" x="54.93" y="95.21" width="2.53" height="2.53" transform="translate(152.67 40.27) rotate(90)"/>
+            <line class="cls-red cls-7" x1="57.2" y1="97.73" x2="57.2" y2="95.21"/>
+          </g>
+          <g>
+            <rect class="cls-red cls-7" x="54.93" y="99.28" width="2.53" height="2.53" transform="translate(156.74 44.34) rotate(90)"/>
+            <line class="cls-red cls-7" x1="57.2" y1="101.8" x2="57.2" y2="99.28"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <rect class="cls-red cls-7" x="46.2" y="99.28" width="2.53" height="2.53" transform="translate(-53.08 148) rotate(-90)"/>
+            <line class="cls-red cls-7" x1="46.46" y1="99.28" x2="46.46" y2="101.8"/>
+          </g>
+          <g>
+            <rect class="cls-red cls-7" x="46.2" y="95.21" width="2.53" height="2.53" transform="translate(-49.01 143.93) rotate(-90)"/>
+            <line class="cls-red cls-7" x1="46.46" y1="95.21" x2="46.46" y2="97.73"/>
+          </g>
+        </g>
+      </g>
+      <g *ngIf="table_11 == '1'">
+        <rect class="cls-red cls-7" x="47.78" y="105.42" width="8.1" height="5" transform="translate(159.75 56.09) rotate(90)"/>
+        <g>
+          <g>
+            <rect class="cls-red cls-7" x="54.93" y="104.62" width="2.53" height="2.53" transform="translate(162.08 49.69) rotate(90)"/>
+            <line class="cls-red cls-7" x1="57.2" y1="107.15" x2="57.2" y2="104.62"/>
+          </g>
+          <g>
+            <rect class="cls-red cls-7" x="54.93" y="108.69" width="2.53" height="2.53" transform="translate(166.15 53.76) rotate(90)"/>
+            <line class="cls-red cls-7" x1="57.2" y1="111.22" x2="57.2" y2="108.69"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <rect class="cls-red cls-7" x="46.2" y="108.69" width="2.53" height="2.53" transform="translate(-62.5 157.41) rotate(-90)"/>
+            <line class="cls-red cls-7" x1="46.46" y1="108.69" x2="46.46" y2="111.22"/>
+          </g>
+          <g>
+            <rect class="cls-red cls-7" x="46.2" y="104.62" width="2.53" height="2.53" transform="translate(-58.43 153.34) rotate(-90)"/>
+            <line class="cls-red cls-7" x1="46.46" y1="104.62" x2="46.46" y2="107.15"/>
+          </g>
+        </g>
+      </g>
+    </g>
+
+  <!-- 1, 2, 3, 4, 5, 11 and 12 end here -->
+
+    <text *ngIf="table_1 == '0'" id="1" (click)="clickOnTable('1')" class="cls-20" transform="translate(54.94 81.89)"><tspan x="0" y="0">1</tspan></text>
+    <text *ngIf="table_2 == '0'" id="2" (click)="clickOnTable('2')" class="cls-20" transform="translate(72.4 81.89)"><tspan x="0" y="0">2</tspan></text>
+    <text *ngIf="table_3 == '0'" id="3" (click)="clickOnTable('3')" class="cls-20" transform="translate(89.93 81.85)"><tspan x="0" y="0">3</tspan></text>
+    <text *ngIf="table_4 == '0'" id="4" (click)="clickOnTable('4')" class="cls-20" transform="translate(99.27 95.94)"><tspan x="0" y="0">4</tspan></text>
+    <text *ngIf="table_5 == '0'" id="5" (click)="clickOnTable('5')" class="cls-20" transform="translate(99.02 107.45)"><tspan x="0" y="0">5</tspan></text>
+    <text *ngIf="table_6 == '0'" id="6" (click)="clickOnTable('6')" class="cls-20" transform="translate(96.78 120.39)"><tspan x="0" y="0">6</tspan></text>
+    <text *ngIf="table_7 == '0'" id="7" (click)="clickOnTable('7')" class="cls-20" transform="translate(85.29 120.53)"><tspan x="0" y="0">7</tspan></text>
+    <text *ngIf="table_8 == '0'" id="8" (click)="clickOnTable('8')" class="cls-20" transform="translate(72.73 120.53)"><tspan x="0" y="0">8</tspan></text>
+    <text *ngIf="table_9 == '0'" id="9" (click)="clickOnTable('9')" class="cls-20" transform="translate(61.05 120.71)"><tspan x="0" y="0">9</tspan></text>
+    <text *ngIf="table_10 == '0'" id="10" (click)="clickOnTable('10')" class="cls-20" transform="translate(49.4 120.39)"><tspan x="0" y="0">10</tspan></text>
+    <text *ngIf="table_11 == '0'" id="11" (click)="clickOnTable('11')" class="cls-20" transform="translate(50.24 109.03)"><tspan x="0" y="0">11</tspan></text>
+    <text *ngIf="table_12 == '0'" id="12" (click)="clickOnTable('12')"class="cls-20" transform="translate(50.17 99.32)"><tspan x="0" y="0">12</tspan></text>
+
+
+    <text *ngIf="table_1 == '1'" class="cls-20" transform="translate(54.94 81.89)"><tspan x="0" y="0">1</tspan></text>
+    <text *ngIf="table_2 == '1'" class="cls-20" transform="translate(72.4 81.89)"><tspan x="0" y="0">2</tspan></text>
+    <text *ngIf="table_3 == '1'" class="cls-20" transform="translate(89.93 81.85)"><tspan x="0" y="0">3</tspan></text>
+    <text *ngIf="table_4 == '1'" class="cls-20" transform="translate(99.27 95.94)"><tspan x="0" y="0">4</tspan></text>
+    <text *ngIf="table_5 == '1'" class="cls-20" transform="translate(99.02 107.45)"><tspan x="0" y="0">5</tspan></text>
+    <text *ngIf="table_6 == '1'" class="cls-20" transform="translate(96.78 120.39)"><tspan x="0" y="0">6</tspan></text>
+    <text *ngIf="table_7 == '1'" class="cls-20" transform="translate(85.29 120.53)"><tspan x="0" y="0">7</tspan></text>
+    <text *ngIf="table_8 == '1'" class="cls-20" transform="translate(72.73 120.53)"><tspan x="0" y="0">8</tspan></text>
+    <text *ngIf="table_9 == '1'"class="cls-20" transform="translate(61.05 120.71)"><tspan x="0" y="0">9</tspan></text>
+    <text *ngIf="table_10 == '1'" class="cls-20" transform="translate(49.4 120.39)"><tspan x="0" y="0">10</tspan></text>
+    <text *ngIf="table_11 == '1'" class="cls-20" transform="translate(50.24 109.03)"><tspan x="0" y="0">11</tspan></text>
+    <text *ngIf="table_12 == '1'" class="cls-20" transform="translate(50.17 99.32)"><tspan x="0" y="0">12</tspan></text>
+
+  </g>
+  <g id="Structure">
+    <path class="cls-3" d="M110.79,77.49c-.46-.12-.94-.18-1.44-.18"/>
+    <line class="cls-11" x1="110.79" y1="83.5" x2="109.21" y2="83.5"/>
+    <polyline class="cls-17" points="109.2 85.24 108.36 85.24 108.36 83.5 109.2 83.5 109.2 85.24"/>
+    <polyline class="cls-17" points="108.36 75.5 108.36 77.31 109.2 77.31 109.2 75.27"/>
+    <line class="cls-11" x1="98.52" y1="15.43" x2="98.52" y2="10.37"/>
+    <g>
+      <path class="cls-4" d="M93.31,10.23c0,.17,0,.34,.02,.5"/>
+      <path class="cls-12" d="M93.54,11.74c.55,1.83,2.08,3.23,3.97,3.6"/>
+      <path class="cls-4" d="M98.02,15.41c.16,.02,.33,.02,.5,.02"/>
+    </g>
+    <polyline class="cls-17" points="103.58 10.37 99.08 10.37 98.52 10.37 98.52 9.53 99.08 9.53 103.58 9.53"/>
+    <polyline class="cls-17" points="43.11 158.6 -75.57 158.6 -75.57 188.13 -74.44 188.46 -74.44 160 43.68 160"/>
+    <line class="cls-11" x1="70.96" y1="140.6" x2="70.96" y2="134.41"/>
+    <line class="cls-11" x1="84.74" y1="140.6" x2="84.74" y2="134.41"/>
+    <path class="cls-3" d="M84.74,140.6c-3.81,0-6.89-2.83-6.89-6.33,0,3.5-3.09,6.33-6.89,6.33"/>
+    <polyline class="cls-17" points="85.58 133.56 85.58 134.41 84.74 134.41 84.74 133.56 85.58 133.56"/>
+    <line class="cls-11" x1="85.58" y1="140.6" x2="85.58" y2="134.41"/>
+    <line class="cls-11" x1="99.36" y1="140.6" x2="99.36" y2="134.41"/>
+    <path class="cls-3" d="M99.36,140.6c-3.81,0-6.89-2.83-6.89-6.33,0,3.5-3.08,6.33-6.89,6.33"/>
+    <polyline class="cls-17" points="103.44 133.56 103.44 134.41 99.36 134.41 99.36 133.56 103.44 133.56"/>
+    <line class="cls-11" x1="50.99" y1="140.6" x2="50.99" y2="134.41"/>
+    <line class="cls-11" x1="64.77" y1="140.6" x2="64.77" y2="134.41"/>
+    <path class="cls-3" d="M64.77,140.6c-3.81,0-6.89-2.83-6.89-6.33,0,3.5-3.08,6.33-6.89,6.33"/>
+    <polygon class="cls-17" points="70.96 133.56 70.96 134.41 64.77 134.41 64.77 133.56 65.33 133.56 70.96 133.56"/>
+    <polyline class="cls-17" points="48.11 133.56 50.99 133.56 50.99 134.41 48.11 134.41 48.11 133.56"/>
+    <rect class="cls-17" x="67.02" y="126.63" width=".84" height="7.36"/>
+    <line class="cls-15" x1="47.89" y1="149.88" x2="47.89" y2="156.63"/>
+    <path class="cls-15" d="M48.03,156.63c3.81,0,6.89-3.09,6.89-6.89"/>
+    <line class="cls-15" x1="104.42" y1="149.88" x2="104.42" y2="156.63"/>
+    <path class="cls-15" d="M97.67,149.74c0,3.81,3.08,6.89,6.89,6.89"/>
+    <polyline class="cls-17" points="43.11 188.32 43.11 149.54 44.24 149.54 44.24 187.15"/>
+    <polyline class="cls-17" points="43.68 148.75 47.61 148.75 47.89 148.75 47.89 149.88 43.59 149.88"/>
+    <g>
+      <line class="cls-11" x1="43.12" y1="134.69" x2="36.93" y2="134.69"/>
+      <line class="cls-11" x1="43.12" y1="148.47" x2="36.93" y2="148.47"/>
+      <g>
+        <path class="cls-4" d="M36.93,148.47c0-.17,0-.33,.02-.5"/>
+        <path class="cls-6" d="M37.08,146.94c.57-2.71,2.61-4.82,5.15-5.27"/>
+        <path class="cls-4" d="M42.75,141.6c.17-.01,.33-.02,.5-.02-.17,0-.34,0-.5-.02"/>
+        <path class="cls-9" d="M41.73,141.38c-2.46-.66-4.36-2.9-4.73-5.67"/>
+        <path class="cls-4" d="M36.94,135.19c-.01-.17-.02-.33-.02-.5"/>
+      </g>
+    </g>
+    <polyline class="cls-17" points="43.96 150.6 43.11 150.6 43.11 148.47 43.96 148.47 43.96 150.6"/>
+    <polyline class="cls-14" points="103.3 161.13 103.3 160.57 108.08 160.57"/>
+    <line class="cls-14" x1="103.3" y1="161.13" x2="108.08" y2="161.13"/>
+    <line class="cls-11" x1="106.14" y1="27.25" x2="99.96" y2="27.25"/>
+    <line class="cls-11" x1="106.14" y1="13.47" x2="99.96" y2="13.47"/>
+    <g>
+      <path class="cls-4" d="M99.95,13.47c0,.17,0,.33,.02,.5"/>
+      <path class="cls-9" d="M100.11,15c.57,2.72,2.6,4.82,5.15,5.27"/>
+      <path class="cls-4" d="M105.78,20.34c.17,.01,.33,.02,.5,.02-.17,0-.34,0-.5,.02"/>
+      <path class="cls-9" d="M104.75,20.56c-2.46,.66-4.36,2.9-4.73,5.67"/>
+      <path class="cls-4" d="M99.97,26.75c-.01,.17-.02,.33-.02,.5"/>
+    </g>
+    <rect class="cls-17" x="106.14" y="12.4" width="3.07" height="1.07"/>
+    <polyline class="cls-17" points=".36 10.93 .36 -34.91 .36 -35.75 2.33 -35.75 2.61 -35.75 2.61 -34.91 2.33 -34.91 1.49 -34.91 1.49 -4.82 9.08 -4.82 9.36 -4.82 9.36 -3.97 9.08 -3.97 9.08 -3.69 1.49 -3.69 1.49 10.93"/>
+    <polyline class="cls-17" points="22.58 10.93 22.58 -3.69 16.68 -3.69 16.68 -3.97 16.39 -3.97 16.39 -4.82 16.68 -4.82 22.58 -4.82 22.58 -34.91 9.93 -34.91 9.36 -34.91 9.36 -35.75 9.93 -35.75 36.64 -35.75 36.93 -35.75 36.93 -34.91 36.64 -34.91 23.71 -34.91 23.71 -4.82 29.89 -4.82 30.18 -4.82 30.18 -3.97 29.89 -3.97 29.89 -3.69 23.71 -3.69 23.71 10.93"/>
+    <polyline class="cls-17" points="45.08 3.9 45.08 -3.69 37.49 -3.69 37.49 -3.97 36.93 -3.97 36.93 -4.82 37.49 -4.82 45.08 -4.82 45.08 -34.91 44.24 -34.91 43.96 -34.91 43.96 -35.75 44.24 -35.75 45.08 -35.75 45.08 -43.35 46.77 -43.35 46.77 3.9"/>
+    <polygon class="cls-17" points="102.56 125.97 48.22 125.97 48.22 127.1 103.86 127.1 102.56 125.97"/>
+    <polyline class="cls-17" points="52.11 10.37 88.39 10.37 92.89 10.37 93.17 10.37 93.17 9.53 92.89 9.53 88.39 9.53 88.39 5.03 103.58 5.03 103.58 3.34 86.71 3.34 86.71 8.4 52.11 8.4"/>
+    <g>
+      <line class="cls-11" x1="59.99" y1="163.94" x2="65.33" y2="163.94"/>
+      <g>
+        <path class="cls-4" d="M60.13,169.14c.17,0,.34,0,.5-.02"/>
+        <path class="cls-2" d="M61.63,168.92c1.83-.55,3.23-2.08,3.6-3.97"/>
+        <path class="cls-4" d="M65.31,164.44c.02-.16,.02-.33,.02-.5"/>
+      </g>
+      <line class="cls-11" x1="59.99" y1="157.19" x2="65.33" y2="157.19"/>
+      <g>
+        <path class="cls-4" d="M60.13,162.39c.17,0,.34,0,.5-.02"/>
+        <path class="cls-2" d="M61.63,162.17c1.83-.55,3.23-2.08,3.6-3.97"/>
+        <path class="cls-4" d="M65.31,157.69c.02-.16,.02-.33,.02-.5"/>
+      </g>
+      <polyline class="cls-14" points="72.64 163.1 59.99 163.1 59.99 162.82 59.99 162.53 59.71 162.53 59.71 162.82 59.71 163.66 59.71 163.94 59.99 163.94 59.99 163.66 59.99 163.38 72.64 163.38"/>
+      <polyline class="cls-14" points="72.64 156.35 59.99 156.35 59.99 156.07 59.99 155.78 59.71 155.78 59.71 156.07 59.71 156.91 59.71 157.19 59.99 157.19 59.99 156.91 59.99 156.63 72.64 156.63"/>
+      <line class="cls-11" x1="59.99" y1="150.44" x2="65.33" y2="150.44"/>
+      <g>
+        <path class="cls-4" d="M60.13,155.64c.17,0,.34,0,.5-.02"/>
+        <path class="cls-2" d="M61.63,155.42c1.83-.55,3.23-2.08,3.6-3.97"/>
+        <path class="cls-4" d="M65.31,150.94c.02-.16,.02-.33,.02-.5"/>
+      </g>
+      <polyline class="cls-14" points="59.99 149.88 59.99 150.44 59.71 150.44 59.99 150.44 59.71 150.44 59.71 149.88"/>
+    </g>
+    <line class="cls-11" x1="92.33" y1="163.94" x2="86.99" y2="163.94"/>
+    <g>
+      <path class="cls-4" d="M92.19,169.14c-.17,0-.34,0-.5-.02"/>
+      <path class="cls-2" d="M90.69,168.92c-1.83-.55-3.23-2.08-3.6-3.97"/>
+      <path class="cls-4" d="M87.01,164.44c-.02-.16-.02-.33-.02-.5"/>
+    </g>
+    <line class="cls-11" x1="92.33" y1="157.19" x2="86.99" y2="157.19"/>
+    <g>
+      <path class="cls-4" d="M92.19,162.39c-.17,0-.34,0-.5-.02"/>
+      <path class="cls-2" d="M90.69,162.17c-1.83-.55-3.23-2.08-3.6-3.97"/>
+      <path class="cls-4" d="M87.01,157.69c-.02-.16-.02-.33-.02-.5"/>
+    </g>
+    <polyline class="cls-14" points="79.67 163.1 92.33 163.1 92.33 162.82 92.33 162.53 92.61 162.53 92.61 162.82 92.61 163.66 92.61 163.94 92.33 163.94 92.33 163.66 92.33 163.38 79.67 163.38"/>
+    <line class="cls-11" x1="92.33" y1="170.55" x2="86.99" y2="170.55"/>
+    <path class="cls-4" d="M87.01,171.05c-.02-.16-.02-.33-.02-.5"/>
+    <polyline class="cls-14" points="79.67 169.71 92.33 169.71 92.33 169.43 92.33 169.14 92.61 169.14 92.61 169.43 92.61 170.27 92.61 170.55 92.33 170.55 92.33 170.27 92.33 169.99 79.67 169.99"/>
+    <polyline class="cls-14" points="79.67 156.35 92.33 156.35 92.33 156.07 92.33 155.78 92.61 155.78 92.61 156.07 92.61 156.91 92.61 157.19 92.33 157.19 92.33 156.91 92.33 156.63 79.67 156.63"/>
+    <line class="cls-11" x1="92.33" y1="150.44" x2="86.99" y2="150.44"/>
+    <g>
+      <path class="cls-4" d="M92.19,155.64c-.17,0-.34,0-.5-.02"/>
+      <path class="cls-2" d="M90.69,155.42c-1.83-.55-3.23-2.08-3.6-3.97"/>
+      <path class="cls-4" d="M87.01,150.94c-.02-.16-.02-.33-.02-.5"/>
+    </g>
+    <polyline class="cls-14" points="92.33 149.88 92.33 150.44 92.61 150.44 92.33 150.44 92.61 150.44 92.61 149.88"/>
+    <line class="cls-15" x1="74.33" y1="148.75" x2="74.33" y2="145.1"/>
+    <path class="cls-15" d="M78.27,148.61c0-2.1-1.7-3.8-3.8-3.8"/>
+    <polygon class="cls-17" points="72.64 149.88 55.21 149.88 54.92 149.88 54.92 148.75 55.21 148.75 73.77 148.75 74.33 148.75 74.33 149.88 73.77 149.88 72.64 149.88"/>
+    <polyline class="cls-17" points="72.64 149.65 72.64 190.1 50.8 190.1 51.27 191.22 103.58 191.22 103.58 190.1 79.67 190.1 79.67 149.88 97.67 149.88 97.67 148.75 78.55 148.75 77.99 148.75 77.99 149.88 78.55 149.88 78.55 190.1 73.77 190.1 73.77 149.33"/>
+    <polyline class="cls-17" points="108.08 225.22 108.08 149.88 104.99 149.88 104.42 149.88 104.42 148.75 104.99 148.75 109.2 148.75 109.2 225.22"/>
+    <polyline class="cls-17" points="42.83 13.18 .36 13.18 .36 10.93 42.83 10.93"/>
+    <polyline class="cls-17" points="109.2 27.25 109.2 63.81 106.11 63.81 106.11 27.25"/>
+    <polyline class="cls-17" points="109.2 122.6 109.2 86.03 106.11 86.03 106.11 122.59 106.11 125.69"/>
+    <polyline class="cls-17" points="103.58 75.91 103.58 86.03 109.2 86.03 109.2 84.91 104.7 84.91 104.7 75.91"/>
+    <polyline class="cls-17" points="107.52 1.65 107.52 -13.53 107.52 -13.54 108.36 -13.54 108.36 -14.1 109.21 -14.1 109.21 -13.54 109.2 -13.53 109.2 1.65"/>
+    <polyline class="cls-17" points="103.58 63.81 109.2 63.81 109.2 75.91 103.58 75.91 103.58 63.81"/>
+    <polyline class="cls-17" points="102.45 122.6 109.2 122.6 109.2 139.19 102.45 139.19 102.45 122.6"/>
+    <polyline class="cls-17" points="42.83 3.9 52.11 3.9 52.11 13.18 42.83 13.18 42.83 3.9"/>
+    <polygon class="cls-17" points="48.74 125.97 43.11 125.97 43.11 133.81 43.11 134.41 43.11 134.69 43.96 134.69 43.96 134.41 48.74 134.41 48.74 125.97"/>
+    <polyline class="cls-17" points="103.58 13.18 109.2 13.18 109.2 1.65 103.58 1.65 103.58 13.18"/>
+    <polyline class="cls-14" points="59.15 175.19 59.15 175.47 59.43 175.47 59.43 170.13 72.81 170.13 72.65 169.85 59.99 169.85 59.99 169.85 59.99 169.28 59.71 169.28 59.99 169.28 59.71 169.28 59.71 169.85 59.14 169.85 59.15 169.85 59.71 169.85 59.14 169.85 59.14 175.19 59.14 169.85"/>
+    <polyline class="cls-10" points="51.48 10.37 51.48 33.29 -138.11 33.29 -138.11 60.9 -170.35 93.15 -238.97 93.15 -238.97 185.29 -256.41 185.29"/>
+    <line class="cls-10" x1="43.61" y1="125.97" x2="43.61" y2="93.94"/>
+    <polyline class="cls-10" points="43.76 87.52 43.76 76.34 103.55 76.34"/>
+  </g>
+  <g id="Text">
+    <text class="cls-18" transform="translate(21.19 94.53)"><tspan x="0" y="0">Sta</tspan><tspan class="cls-21" x="9.01" y="0">f</tspan><tspan x="10.56" y="0">f </tspan><tspan x="-3.9" y="7.2">Lounge</tspan></text>
+    <text class="cls-19" transform="translate(20.91 22.25)"><tspan x="0" y="0">Food </tspan><tspan x="-5.11" y="7">Counter</tspan></text>
+    <g>
+      <line class="cls-13" x1="36.42" y1="91.16" x2="45.86" y2="91.16"/>
+      <polygon class="cls-17" points="45.66 89.64 45.66 92.68 47.17 91.16 45.66 89.64"/>
+    </g>
+  </g>
+</svg>
+
+
+</div>
+
+</ion-content>
+
+
+
+<ion-footer mode="md" class="ion-no-border">
+  <div style="height: auto; background-color: #f3f3f3 !important">
+  <div  *ngIf="footerTableDetails == true" style="position:relative;box-shadow: 0px -20px 50px #00000017;max-width: 600px;margin:auto;">
+    <ion-item mode="md" lines="full" style="--background: transparent;">
+      <ion-label class="ion-text-wrap">
+        <h3 style="font-size: 16pt;font-weight:800;">TABLE {{selectedTBnum}}</h3>
+        <div style="display:flex;width:100%;align-items:center;font-weight:800;color:#949494;margin:4px 0px 0px;">
+          <ion-text style="width:30%;">{{locationData[0]?.other}}</ion-text>
+		      <ion-text style="width:15px;display: inline-flex;vertical-align: middle; 
+          align-items: center;justify-content: start;"><span class="dot"></span></ion-text>
+          <ion-text style="width:60%;">{{locationData[0]?.name}}</ion-text>
+        </div>
+      </ion-label>
+    </ion-item>
+    <div class="ion-padding-horizontal" style="background-color: transparent;"> 
+		  <h3 style="font-size: 14px;font-weight:600;color:#949494;">TABLE BOOKING TIME:</h3>
+	  </div>
+	  <ion-radio-group [(ngModel)]="bookingTime" mode="md" style="--background: transparent;">
+	  	<ion-item  mode="md" style="--background: transparent;">
+	  	  <ion-label style="font-size:14px;font-weight:600;color:#949494;">30 Min</ion-label>
+	  	  <ion-radio slot="start" value="30"></ion-radio>
+	  	</ion-item>	
+	  	<ion-item  mode="md" style="--background: transparent;">
+	  	  <ion-label style="font-size:14px;font-weight:600;color:#949494;">45 Min</ion-label>
+	  	  <ion-radio slot="start" value="45"></ion-radio>
+	  	</ion-item>	
+	  	<ion-item mode="md" style="--background: transparent;">
+	  	  <ion-label style="font-size:14px;font-weight:600;color:#949494;">60 Min</ion-label>
+	  	  <ion-radio slot="start" value="60"></ion-radio>
+	  	</ion-item>
+	  </ion-radio-group>
+	  <div class="ion-padding"  style="display:flex; justify-content:space-between ;color:#949494;background-color: transparent;">
+            <div style="width:40%;">
+              <ion-button class="hex-button" (click)="confirmBooking()" [disabled]="isButtonDisabled" color="danger"
+                style="margin: auto; width: 100%; height: 35px;font-size: 14px;">CONFIRM</ion-button>
+            </div>
+            <div style="width:40%;">
+              <ion-button class="hex-button" (click)="cancelClick()"
+                style="margin:auto;--background:#B9B5B5;width: 100%;height: 35px;font-size: 14px;">CANCEL</ion-button>
+            </div>
+	  </div>
+  </div> 
+
+
+  <div *ngIf="bookedTableData && footerTableDetails == false" style="position:relative;box-shadow: 0px -20px 50px #00000017;max-width: 600px;margin:auto;">
+   <ion-toolbar mode="md" *ngFor="let btd of bookedTableData">	
+	<ion-item mode="md" lines="full">
+	   <ion-label class="ion-text-wrap">
+		 <h3 style="font-size: 16pt;font-weight:800;">TABLE {{btd?.tablenumber}}</h3>
+		 <div style="display:flex;width:100%;font-weight:600;color:#949494;margin:2px 0px 0px;">
+		   <ion-text>BOOKING TIME  -  {{btd?.bookingtime}} Min. </ion-text>
+		 </div>		  
+	   </ion-label>
+	   <div>
+		<ion-button expand="block" class="hex-button" color="danger" (click)="cancelBooking(btd?.tablenumber, btd?.id)"
+		            style="margin: auto; width: 100%; height: 35px;font-size: 14px;">Cancel Booking</ion-button>
+	  </div>
+	 </ion-item>
+	</ion-toolbar>
+  </div>
+  </div>
+  <app-custom-tabs></app-custom-tabs>
+</ion-footer>

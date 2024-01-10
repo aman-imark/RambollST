@@ -1,0 +1,229 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+
+
+
+
+@font-face {   
+    font-family: 'SegoeUI';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./assets/fonts/SegoeUI/Segoe UI.ttf');
+  }
+   
+  
+  @font-face {   
+    font-family: 'SegoeUI';
+    font-weight: 500;
+    src: url('./assets/fonts/SegoeUI/Segoe UI.ttf');
+  }
+  
+  @font-face {   
+    font-family: 'SegoeUI';
+    font-weight: 800;
+    src: url('./assets/fonts/SegoeUI/Segoe UI Bold.ttf');
+  }
+  
+  
+  
+  /* Set variables for all modes */
+  :root {
+    --ion-font-family: 'SegoeUI';
+    // --ion-text-color: #323232; 
+    // --ion-text-color: #4a4a4a; 
+
+    /* Set the background of the entire app */
+    --ion-background-color: #ffffff;
+  }
+
+
+ion-back-button{
+  color: #949494;
+}
+
+ion-content{
+  .btn-custom{
+    height:48px;
+    font-size:18px;
+    font-weight: 800;
+    max-width: 350px;
+    margin:auto;
+  }
+  .small-btn{
+    height:35px;
+    font-size:14px;
+    font-weight: 800;
+    max-width:200px;
+    margin:auto;
+  }
+  ion-button{
+    height:48px;
+    font-size:18px;
+    font-weight: 800;
+    max-width: 350px;
+    margin:auto;
+  }
+}
+
+ion-footer{
+  .btn-custom{
+    height:48px;
+    font-size:18px;
+    font-weight: 800;
+    max-width: 350px;
+    margin:auto;
+  }
+  .small-btn{
+    height:35px;
+    font-size:14px;
+    font-weight: 800;
+    max-width:200px;
+    margin:auto;
+  }
+  ion-button{
+    height:48px;
+    font-size:18px;
+    font-weight: 800;
+    max-width: 350px;
+    margin:auto;
+  }
+}
+
+
+.hex-div{
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  height: 140px;
+  width: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#fff;
+  background-color: #EE7981;
+  margin: auto;
+  flex-direction: column;
+  text-align:center;
+  
+  padding:4%;
+  ion-icon{
+    font-size:25pt;
+    color:#fff;
+  }
+  ion-text{
+    color:#fff;
+  }
+}
+
+.hex-button{
+  clip-path: polygon(5% 0, 95% 0, 100% 50%, 95% 100%, 5% 100%, 0% 50%);
+}
+
+ion-accordion-group{
+  ion-accordion {
+      .ion-accordion-toggle-icon {
+          color: #fff;
+      }
+  }
+}
+
+
+ion-tab-button{
+  ion-icon{
+    font-size:32px;
+  }
+}
+
+
+
+ion-popover{
+  ion-select-popover{
+      ion-list{
+          padding-top: 0px !important;
+          padding-bottom: 0px !important;
+      }
+  }
+}
+
+
+ion-popover::part(content){ 
+  width:92vw;
+}
+
+ion-select::part(icon) {
+  opacity: 1;
+}
+
+
+@media only screen and (min-width:620px) {
+  ion-select{
+    font-size:20px;
+    width:60vw !important;
+    margin:auto;
+  }
+
+  ion-select::part(icon) {
+    opacity: 1;
+    font-size:50px;
+  }
+
+  ion-popover::part(content){ 
+    width:58vw;
+  }
+
+}
+
+
+
+.custom-loader {
+  background: rgb(255 255 255 / 70%) !important;
+  .loading-wrapper{
+    background: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    img{
+      height:60px;
+    }
+  }
+}
+
+.alertCSS .alert-wrapper {
+  font-weight:600;
+  button{
+    font-weight:600;
+  }
+  button.alert-button:nth-child(1){
+    color: #949494;
+  }
+  button.alert-button.ok-button{
+    color: var(--ion-color-primary);
+  }
+}
+
+ion-footer.footer-toolbar-padding ion-toolbar:last-of-type {
+  padding-bottom: 0px;
+}
+  

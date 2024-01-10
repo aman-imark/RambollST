@@ -1,0 +1,21 @@
+
+<ion-content [fullscreen]="true">
+  <ion-header  slot="fixed" class="ion-no-border">
+    <ion-toolbar>
+      <ion-buttons slot="end">
+        <ion-back-button text="" icon="close" defaultHref="/"  
+             style="color: #333 !important;--color: #333 !important;" (click)="screenSaverClose()"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide>
+       <img src="assets/saver1.svg">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/saver2.svg">
+    </ion-slide>   
+  </ion-slides>
+
+</ion-content>

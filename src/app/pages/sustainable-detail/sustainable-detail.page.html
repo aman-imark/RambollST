@@ -1,0 +1,25 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+    <!-- <ion-title class="ion-text-start">Sustainable</ion-title> -->
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="false">
+
+  <div>
+    <img [src]="sus_image">
+  </div>
+  <div class="ion-padding">
+    <h3 style="color:#EE7981;font-weight: 800;">{{sus_title}}</h3>
+    <div [innerHtml]="sus_desc" style="margin:0px;color:#949494;font-weight:800;"></div>
+  </div>
+
+  <!-- <p style="margin:0px;color:#949494;">Found a bug? Have a sugguestion?</p> -->
+  
+</ion-content>
+
+<app-custom-tabs></app-custom-tabs>

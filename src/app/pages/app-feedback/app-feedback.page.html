@@ -1,0 +1,62 @@
+<ion-header  class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="false">
+
+  <div *ngIf="afterSelect === false"  class="ion-padding-horizontal"  style="max-width: 600px;margin: auto;">
+    <h3 style="color:#EE7981;font-weight: 800;">FEEDBACK FORM</h3>
+    <p style="margin:0px;color:#949494;font-weight: 800;">Found a bug? Have a sugguestion?</p>
+    <p style="margin:0px;color:#949494;font-weight: 800;">Fill out the form below and we'll take a look!</p><br>
+
+    <h6 style="color:#949494;font-weight: 800;">HOW WAS YOUR EXPERIENCE WITH THE APP TODAY?</h6>
+    <div class="fed-div ion-padding" style="display:flex;justify-content: space-evenly;">
+      <img src="{{ showVar1 ? 'assets/fed1a.svg' : 'assets/fed1.svg'}}" 
+           type="button" (click)="toggleChild('1')"/>
+      <img src="{{ showVar2 ? 'assets/fed2a.svg' : 'assets/fed2.svg'}}" 
+           type="button" (click)="toggleChild('2')"/>
+      <img src="{{ showVar3 ? 'assets/fed3a.svg' : 'assets/fed3.svg'}}" 
+           type="button" (click)="toggleChild('3')"/>
+    </div> <br>
+    <form  [formGroup]="feedbackForm"  (ngSubmit)="sendFeedback()">
+      <div *ngIf="(feedbackForm.get('message').touched || submitted) &&  feedbackForm.get('message').hasError('required')"  class="text-danger">Message is required*</div>
+    <ion-item lines="none" class="inputBox">
+      <div>
+        <ion-textarea #myTextArea autoGrow="true" rows="4" cols="20" minlength="5" placeholder="*Message here..." name="message" 
+        formControlName="message" requird></ion-textarea>
+      </div>
+    </ion-item>
+    <br>
+    <div class="ion-text-center ion-padding">
+      <div><ion-button  type="submit" mode="ios" expand="block"  color="danger" class="small-btn hex-button">SEND FEEDBACK</ion-button></div>
+    </div>
+
+    </form>
+  </div>
+
+
+  <div *ngIf="afterSelect === true"  class="ion-padding"  style="max-width: 600px;margin: auto;">
+    <div style="height:35vh;width: 80%;margin: 0% auto;text-align:center;">
+      <img src="../assets/env2.svg" style="height:100%;">
+    </div>
+
+    <div class="ion-padding"> <br> <br>
+      <h3 style="color:#010101;font-weight: 800;text-align: center;">THANK YOU FOR YOUR FEEDBACK!</h3>
+      <p style="color:#949494;font-weight: 800;text-align: center;">Thank you for sharing your thoughts with us. Your feedback will be put to great use!</p>
+    </div>
+    <div class="ion-padding"  style="text-align: center;">
+      <div><ion-button  mode="ios" expand="block" class="btn-custom hex-button" color="danger" (click)="goto_SustainablePage()">WAYS TO BE MORE SUSTAINABLE</ion-button></div>
+    </div>     
+  </div>
+
+
+
+
+</ion-content>
+
+<app-custom-tabs></app-custom-tabs>
